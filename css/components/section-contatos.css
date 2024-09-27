@@ -5,20 +5,25 @@
 }
 
 .select {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
 }
 
 .formulario {
   width: 700px;
-  height: fit-content;
+  height: 500px;
   padding: 20px;
   background-image: url(./../../assets/img/img-contato-email.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
   border-radius: 15px;
+  border: 2px solid goldenrod;
 }
 
 .formulario .label {
@@ -34,27 +39,34 @@
   border: 2px solid goldenrod;
   font-size: 20px;
   opacity: 0.7;
+  outline: none;
 }
+
+.input:focus {
+  opacity: 1;
+  border: 5px solid goldenrod;
+}
+
 .formulario .enviar {
-  width: 70%;
-  margin: 15px calc(15%);
+  width: 60%;
+  margin: 15px calc(20%);
   padding: 8px 0;
-  color: white;
-  opacity: 0.9;
+  opacity: 0.7;
   font-size: 32px;
-  background-color: gray;
   font-weight: "Ariel Black";
+  text-transform: uppercase;
+  color: goldenrod;
+  background-color: white;
   border: 2px solid goldenrod;
   border-radius: 10px;
   transition: 200ms ease;
 }
 
 .formulario .enviar:hover {
-  opacity: 0.8;
+  opacity: 1;
   font-weight: 800;
   transform: scale(1.1);
-  background-color: goldenrod;
-  border: 2px solid white;
+  border: 5px solid goldenrod;
 }
 
 .boxPulsar {
@@ -102,24 +114,22 @@
   }
 }
 
-@media (max-width: 1309px) {
+@media screen and (max-width: 1309px) {
   .formulario {
-    background-size: 100% 100%;
+    background-size: cover;
+  }
+  .select {
+    width: 95%;
   }
 }
-@media (max-width: 900px) {
+@media screen and (max-width: 1180px) {
   .select {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
-
-@media (max-width: 767px) {
-  .select {
-    flex-direction: column;
-  }
+@media screen and (max-width: 768px) {
   .formulario {
-    width: 100%;
-    padding: 0;
-    background-size: 100% 100%;
+    width: 95%;
+    padding: 10px;
   }
 }
