@@ -10,19 +10,29 @@
 }
 
 .titulo-animado {
-  width: 450px;
+  width: 465px;
   height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: titulo-animado 3s ease infinite;
 }
-
+@keyframes titulo-animado {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
 .welcome {
+  text-align: center;
   white-space: nowrap;
-  font-size: 30px;
+  font-size: 60px;
   overflow: hidden;
   color: white;
-  font-family: "Goblin one", sans-serif;
+  text-shadow: 5px 5px 5px black;
+  font-family: "Dancing Script";
   animation: cursor 500ms steps(30) infinite normal,
     tempo 3s steps(40) 1s normal both;
 }
@@ -47,6 +57,7 @@
 .boxPerfilTexto {
   width: 80%;
   height: auto;
+  gap: 20px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -59,13 +70,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
 }
 
 .logoPerfil {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-top-left-radius: 30%;
   border: 3px solid goldenrod;
   animation: logoPerfil 2s ease-in-out;
 }
@@ -118,8 +128,11 @@
   }
 }
 @media (max-width: 600px) {
+  .titulo-animado {
+    width: 90%;
+  }
   .welcome {
-    font-size: 22px;
+    font-size: 40px;
   }
 
   .boxTexto {

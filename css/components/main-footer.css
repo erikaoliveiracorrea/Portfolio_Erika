@@ -11,16 +11,20 @@
   align-items: center;
   justify-content: center;
 }
-
+.logo-eo {
+  width: 120px;
+  height: 80px;
+  margin: 15px 0;
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+}
 .boxLink {
   width: 30%;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.gitHub,
-.linkedin,
-.whatsApp {
+.link {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -36,14 +40,9 @@
 }
 .arroba:hover {
   color: white;
+  font-weight: 600;
 }
 
-.logo-eo {
-  width: 120px;
-  height: 80px;
-  border: 2px solid goldenrod;
-  border-radius: 10px;
-}
 .thanks {
   margin-top: 70px;
   font-family: "Goblin one", sans-serif;
@@ -174,6 +173,7 @@
 
 @media (max-width: 768px) {
   .arroba {
-    font-size: 20px;
+    font-size: 24px;
+    color: white;
   }
 }

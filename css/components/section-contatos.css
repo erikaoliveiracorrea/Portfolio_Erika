@@ -53,7 +53,7 @@
   padding: 8px 0;
   opacity: 0.7;
   font-size: 32px;
-  font-weight: "Ariel Black";
+  font-weight: 400;
   text-transform: uppercase;
   color: goldenrod;
   background-color: white;
@@ -65,8 +65,6 @@
 .formulario .enviar:hover {
   opacity: 1;
   font-weight: 800;
-  transform: scale(1.1);
-  border: 5px solid goldenrod;
 }
 
 .boxPulsar {
@@ -80,6 +78,8 @@
 .imgPulsar {
   width: 250px;
   height: 250px;
+}
+@media screen {
 }
 .boxPulsar:before,
 .boxPulsar:after {
