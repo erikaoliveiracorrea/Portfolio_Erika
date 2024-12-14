@@ -45,10 +45,10 @@
 
 .thanks {
   margin-top: 70px;
-  font-family: "Goblin one", sans-serif;
+  font-family: "Dancing Script", "Goblin one", sans-serif;
   text-align: center;
   color: yellow;
-  font-size: 25px;
+  font-size: 50px;
 }
 
 .thanks-brilho span {
@@ -173,7 +173,7 @@
 
 @media (max-width: 768px) {
   .arroba {
-    font-size: 24px;
+    font-size: 22px;
     color: white;
   }
 }

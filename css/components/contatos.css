@@ -1,27 +1,30 @@
 .section-contatos {
   width: 100%;
   height: auto;
+  padding: 35px 0;
   overflow: hidden;
 }
 
 .select {
   width: 80%;
   height: auto;
-  margin: 0 auto;
+  margin: 40px auto 10px;
   display: flex;
+  gap: 70px;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
 }
 
 .formulario {
-  width: 700px;
-  height: 500px;
+  width: 550px;
+  height: fit-content;
   padding: 20px;
   background-image: url(./../../assets/img/img-contato-email.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
+  background-position: center;
   border-radius: 15px;
   border: 2px solid goldenrod;
 }
@@ -44,16 +47,21 @@
 
 .input:focus {
   opacity: 1;
-  border: 5px solid goldenrod;
 }
-
+.textarea {
+  height: 130px;
+  resize: vertical;
+  min-height: 100px;
+  max-height: 300px;
+}
 .formulario .enviar {
   width: 60%;
   margin: 15px calc(20%);
   padding: 8px 0;
   opacity: 0.7;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 400;
+  font-family: inherit;
   text-transform: uppercase;
   color: goldenrod;
   background-color: white;
@@ -86,8 +94,8 @@
   content: " ";
   display: block;
   position: absolute;
-  left: 70px;
-  right: 70px;
+  left: 20px;
+  right: 20px;
   top: 30px;
   bottom: 35px;
   border-radius: 50%;
@@ -128,6 +136,13 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .section-contatos {
+    padding: 0;
+  }
+  .select {
+    margin: auto;
+    gap: 10px;
+  }
   .formulario {
     width: 95%;
     padding: 10px;

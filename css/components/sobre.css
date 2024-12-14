@@ -1,12 +1,13 @@
 .section-sobre {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100dvh - 100px);
   background-image: url(../../assets/img/cabeçalho.png);
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .titulo-animado {

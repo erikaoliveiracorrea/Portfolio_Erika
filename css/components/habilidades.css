@@ -2,6 +2,7 @@
   width: 100%;
   height: auto;
   overflow: hidden;
+  padding: 100px 0 50px 0;
 }
 
 .habilidades {
@@ -87,15 +88,15 @@
   border-radius: inherit;
 }
 
-@media screen and (min-width: 681px) and (max-width: 1170px) {
-  /*.habilidades {
-    flex-direction: column;
-  }*/
+@media screen and (min-width: 768px) and (max-width: 1170px) {
   .container-box {
-    width: 100%;
+    width: 95%;
   }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 767px) {
+  .section-habilidades {
+    padding: 20px 0;
+  }
   .habilidades {
     width: 95%;
   }

@@ -16,7 +16,7 @@
     <meta name="theme-color" content="goldenrod" />
     <link rel="icon" href="./assets/img/LOGO-EO-2.png" type="image/x-icon" />
 
-    <title>Erika Oliveira</title>
+    <title>Erika Oliveira | Portfólio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -28,6 +28,12 @@
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sail&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,19 +41,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/components/main-header.css" />
-    <link rel="stylesheet" href="css/components/section-sobre.css" />
-    <link rel="stylesheet" href="css/components/section-habilidades.css" />
-    <link rel="stylesheet" href="css/components/section-projetos.css" />
-    <link rel="stylesheet" href="css/components/section-contatos.css" />
+    <link rel="stylesheet" href="css/components/header.css" />
+    <link rel="stylesheet" href="css/components/sobre.css" />
+    <link rel="stylesheet" href="css/components/habilidades.css" />
+    <link rel="stylesheet" href="css/components/projetos.css" />
+    <link rel="stylesheet" href="css/components/contatos.css" />
     <link rel="stylesheet" href="css/components/botao-Topo.css" />
-    <link rel="stylesheet" href="css/components/main-footer.css" />
+    <link rel="stylesheet" href="css/components/footer.css" />
   </head>
 
   <body>
     <header class="section-header">
       <div class="container">
-        <h1 class="erikaOliveira">erika oliveira</h1>
+        <a href="Portfolio.html"
+          ><h1 class="erikaOliveira teste">Erika Oliveira</h1></a
+        >
+
         <div class="menu">
           <nav>
             <a href="#sobre">Sobre</a>
@@ -86,12 +95,11 @@
         <div class="boxTexto">
           <strong>
             <p>
-              Minha jornada no desenvolvimento front-end começou com a
+              Olá, minha jornada no desenvolvimento front-end começou com a
               curiosidade de como eram criadas as páginas de web. Com o tempo,
               essa curiosidade se transformou em um caminho de aprendizado
               constante.
             </p>
-
             <p>
               Ao longo dos anos, tenho aprimorado meus conhecimentos, buscando
               sempre as melhores práticas para criar designs responsivos e
@@ -233,9 +241,19 @@
           method="POST"
           action="https://formsubmit.co/erikaestudosaraujo@gmail.com"
           class="formulario"
+          id="formulario"
+          target="_blank"
         >
           <label for="name" class="label">Nome</label>
-          <input id="name" class="input" type="text" name="name" required />
+          <input
+            id="name"
+            class="input"
+            type="text"
+            name="nome"
+            minlength="3"
+            maxlength="100"
+            required
+          />
 
           <label for="email" class="label">Email</label>
           <input id="email" class="input" type="email" name="email" required />
@@ -243,7 +261,7 @@
           <label for="mensagem" class="label">Mensagem</label>
           <textarea
             id="mensagem"
-            class="input"
+            class="input textarea"
             cols="60"
             rows="10"
             type="mensagem"
@@ -275,17 +293,20 @@
           /></abbr>
         </a>
         <div class="boxLink">
-          <a href="https://www.linkedin.com/in/erika-oliveira-11302432a/">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/erika-oliveira-11302432a/"
+          >
             <img
               class="link animate from-left"
               src="assets/img/linkedin.png"
               alt="imagem linkedin"
             />
           </a>
-          <a href="https://github.com/ErikaEstudos">
+          <a target="_blank" href="https://github.com/ErikaEstudos">
             <img class="link" src="assets/img/Hub.png" alt="imagem hub" />
           </a>
-          <a href="https://wa.me/5522998307032">
+          <a target="_blank" href="https://wa.me/5522998307032">
             <img
               class="link animate from-right"
               src="./assets/img/whatsApp.png"
@@ -319,5 +340,6 @@
     <script src="js/components/animar.js"></script>
     <script src="js/components/botao-Topo.js"></script>
     <script src="js/components/animarPagina.js"></script>
+    <script src="js/components/formulario.js"></script>
   </body>
 </html>

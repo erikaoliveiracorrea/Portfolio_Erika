@@ -6,14 +6,22 @@
 }
 
 body {
+  scroll-behavior: smooth;
   background-image: url(./../assets/img/fundo.webp);
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
 }
 
-button {
-  border: none;
-  font-family: inherit;
+::-webkit-scrollbar {
+  width: 10px;
 }
+::-webkit-scrollbar-track {
+  background: #c9940f;
+}
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+}
+
 a {
   text-decoration: none;
 }
@@ -23,12 +31,28 @@ a {
   font-family: "Goblin One", sans-serif;
   font-size: 30px;
   text-align: center;
-  margin: 20px 0;
   color: goldenrod;
+}
+.animate {
+  opacity: 0;
+  transition: 2s;
+}
+
+.animate.from-left {
+  transform: translateX(-100%);
+}
+
+.animate.from-right {
+  transform: translateX(100%);
+}
+
+.animate.show {
+  transform: translate(0);
+  opacity: 1;
 }
 @media (max-width: 767px) {
   .title-section {
     font-size: 22px;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
   }
 }
