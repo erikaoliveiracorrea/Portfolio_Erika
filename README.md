@@ -1,10 +1,12 @@
 # Portfólio de Erika Oliveira
 
-Bem-vindo ao meu portfólio! Sou uma desenvolvedora Frontend especializada em HTML, CSS e JavaScript, focada em criar experiências web responsivas e interativas.
+Bem-vindo ao meu portfólio!
 
 ## Sobre
 
-Minha jornada no desenvolvimento front-end começou com a paixão por interfaces web e a experiência do usuário. Estou sempre em busca de aprender novas tendências e tecnologias.
+Olá, minha jornada no desenvolvimento Web começou com curiosidade de como eram criadas as páginas de web. Com o tempo, essa curiosidade se transformou em um caminho de aprendizado Front-End, buscando sempre as melhores práticas para criar designs responsivos e interativos.
+Ao aprimorar meus conhecimentos, percebi que minha afinidade com o desenvolvimento ia além do Front-End. Meu interesse natural por resolver desafios lógicos e arquitetar sistemas me levou ao Back-End, onde sigo explorando tecnologias como Node.js, bancos de dados (MongoDb, Msql) e APIs.
+Sempre buscando aprender mais, acompanhando as últimas tendências e avanços na tecnologia. Sinta-se à vontade para explorar os projetos em meu portfólio.
 
 ## Habilidades
 
@@ -13,6 +15,8 @@ Minha jornada no desenvolvimento front-end começou com a paixão por interfaces
 - **JavaScript**
 - **Node.js**
 - **Git & GitHub**
+- **MongoDB**
+- **MySQL**
 
 ## Projetos
 
