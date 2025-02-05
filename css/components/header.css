@@ -1,12 +1,13 @@
-.section-header {
+header {
   width: 100%;
   height: 100px;
+  padding: 0 60px;
   background-image: url(./../../assets/img/header-cabeçalho.png);
 }
-.container {
-  width: 80%;
+
+.menu-nav {
+  width: 100%;
   height: 100%;
-  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,12 +17,12 @@
   padding: 5px 15px;
   color: white;
   flex-wrap: nowrap;
-  border-radius: 50px;
   text-shadow: 5px 5px 5px black;
+  border-radius: 50px;
   box-shadow: 15px 15px 20px black;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 900;
-  letter-spacing: 10px;
+  letter-spacing: 0.4rem;
   font-family: "Dancing Script", Verdana, Geneva, Tahoma, sans-serif;
   animation: Erika 2s ease;
 }
@@ -37,11 +38,7 @@
   }
 }
 
-.menu {
-  width: fit-content;
-}
-
-.menu nav a {
+.box-menu a {
   color: black;
   text-decoration: none;
   padding: 5px;
@@ -50,7 +47,7 @@
   position: relative;
   font-family: "Dancing Script", "Fira Code", sans-serif;
 }
-.menu nav a::after {
+.box-menu a::after {
   content: " ";
   width: 0px;
   height: 4px;
@@ -60,7 +57,7 @@
   left: 0;
   transition: width 0.5s;
 }
-.menu nav a:hover::after {
+.box-menu a:hover::after {
   width: 90%;
 }
 
@@ -106,7 +103,7 @@
   width: 0;
 }
 
-/*menu mobile*/
+/*-----menu mobile------*/
 
 .menu-mobile {
   background-color: #0000008c;
@@ -122,7 +119,7 @@
   z-index: 9999;
 }
 
-.menu-mobile nav a {
+.menu-mobile a {
   color: white;
   text-decoration: none;
   display: block;
@@ -130,43 +127,43 @@
   font-size: 16pt;
 }
 
-.menu-mobile nav a:hover {
+.menu-mobile a:hover {
   background-color: rgba(240, 177, 18, 0.464);
 }
 
-@media (max-width: 1100px) {
-  .container {
-    width: 95%;
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  header {
+    padding: 0 15px;
   }
-}
-@media screen and (min-width: 768px) and (max-width: 940px) {
   .erikaOliveira {
     padding: 5px 15px;
-    font-size: 40px;
+    font-size: 2.75rem;
   }
 }
-@media (max-width: 767px) {
-  .section-header {
-    height: auto;
-  }
-  .container {
-    padding: 10px;
-    width: 100%;
-  }
-  .erikaOliveira {
-    font-size: 33px;
-    padding: 5px 7px;
-  }
+@media screen and (max-width: 768px) {
   /*---menu de mobile---*/
-  .menu {
+  .box-menu {
     display: none;
+  }
+  .button-mobile {
+    display: block;
   }
   .menu-mobile.abrir {
     visibility: visible;
     height: 120%;
   }
-  .button-mobile {
-    display: block;
+}
+@media screen and (max-width: 767px) {
+  header {
+    padding: 0 5px;
   }
-  /*---fim do menu de mobile--*/
+  .erikaOliveira {
+    padding: 5px 7px;
+    font-size: 2.75rem;
+  }
+}
+@media (max-width: 360px) {
+  .erikaOliveira {
+    font-size: 2rem;
+  }
 }

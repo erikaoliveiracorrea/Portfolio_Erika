@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="description"
-      content="Portfólio de Erika Oliverira, desenvolvedora Frontend especializado em HTML, CSS e JavaScript. Confira meus projetos focados em design responsivo, interatividade e experiência do usuário."
+      content="Portfólio de Erika Araujo de Oliveira Correa, desenvolvedora Frontend especializado em HTML, CSS e JavaScript e outros. Confira meus projetos focados em design responsivo, interatividade e experiência do usuário."
     />
     <meta
       name="keywords"
       content="Desenvolvedora Frontend, HTML, CSS, JavaScript, Portfólio, Web Design, Responsividade, UX/UI, Projetos Web, Programação, Frontend Developer, Design Responsivo, Interatividade, Web Development"
     />
-    <meta name="author" content="Erika Oliveira" />
+    <meta name="author" content="Erika Araujo de Oliveira Correa" />
     <meta name="theme-color" content="goldenrod" />
-    <link rel="icon" href="./assets/img/LOGO-EO-2.png" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <title>Erika Oliveira | Portfólio</title>
     <link
@@ -52,37 +52,33 @@
 
   <body>
     <header class="section-header">
-      <div class="container">
-        <a href="Portfolio.html"
-          ><h1 class="erikaOliveira teste">Erika Oliveira</h1></a
-        >
+      <nav class="menu-nav">
+        <a class="erikaOliveira" href="Portfolio.html">Erika Oliveira</a>
 
-        <div class="menu">
-          <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contatos">Contatos</a>
-          </nav>
+        <div class="box-menu">
+          <a href="#sobre">Sobre</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contatos">Contatos</a>
         </div>
+
         <button class="button-mobile" onclick="animarMenu()" id="btn-menu">
           <span class="linha"></span>
           <span class="linha"></span>
           <span class="linha"></span>
         </button>
+
         <div class="menu-mobile" id="menu-mobile">
-          <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contatos">Contatos</a>
-          </nav>
+          <a href="#sobre">Sobre</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contatos">Contatos</a>
         </div>
-      </div>
+      </nav>
     </header>
     <main id="sobre" class="section-sobre">
       <div class="titulo-animado">
-        <p class="welcome">Developer Front End!</p>
+        <h1 class="welcome">Bem Vindo ao Meu Portfólio!</h1>
       </div>
       <div class="boxPerfilTexto">
         <div class="boxPerfil">
@@ -95,22 +91,23 @@
         <div class="boxTexto">
           <strong>
             <p>
-              Olá, minha jornada no desenvolvimento front-end começou com a
+              Olá, minha jornada no desenvolvimento Web começou com a
               curiosidade de como eram criadas as páginas de web. Com o tempo,
               essa curiosidade se transformou em um caminho de aprendizado
-              constante.
+              Front-End, buscando sempre as melhores práticas para criar designs
+              responsivos e interativos.
             </p>
             <p>
-              Ao longo dos anos, tenho aprimorado meus conhecimentos, buscando
-              sempre as melhores práticas para criar designs responsivos e
-              interativos.
+              Ao aprimorar meus conhecimentos, percebi que minha afinidade com o
+              desenvolvimento ia além do Front-End. Meu interesse natural por
+              resolver desafios lógicos e arquitetar sistemas me levou ao
+              Back-End, onde sigo explorando tecnologias como Node.js, bancos de
+              dados (MongoDb, Msql) e APIs.
             </p>
             <p>
-              Estou sempre buscando aprender mais, acompanhando as últimas
-              tendências e avanços na tecnológica.
-            </p>
-            <p>
-              Sinta-se à vontade para explorar os projetos em meu portfólio.
+              Sempre buscando aprender mais, acompanhando as últimas tendências
+              e avanços na tecnologia. Sinta-se à vontade para explorar os
+              projetos em meu portfólio.
             </p>
           </strong>
         </div>
@@ -119,7 +116,6 @@
 
     <section id="habilidades" class="section-habilidades">
       <h2 class="title-section animate from-right">habilidades</h2>
-
       <div class="habilidades">
         <div class="container-box">
           <div class="box">
@@ -143,15 +139,16 @@
               alt="Imagem JavaScript"
             />
           </div>
-        </div>
-        <div class="container-box">
-          <div class="box box2">
+          <div class="box">
             <img
               class="img-habilidades"
               src="assets/img/NODE2.png"
               alt="Imagem NODE"
             />
           </div>
+        </div>
+
+        <div class="container-box">
           <div class="box box2">
             <img
               class="img-habilidades"
@@ -164,6 +161,20 @@
               class="img-habilidades"
               src="assets/img/GIT2.png"
               alt="Imagem Git"
+            />
+          </div>
+          <div class="box box2">
+            <img
+              class="img-habilidades"
+              src="assets/img/mySQL.png"
+              alt="Imagem de mySQL"
+            />
+          </div>
+          <div class="box box2">
+            <img
+              class="img-habilidades"
+              src="assets/img/mongoDB.png"
+              alt="Imagem mongoDB"
             />
           </div>
         </div>
@@ -292,6 +303,13 @@
               alt="imagem logo letra EO"
           /></abbr>
         </a>
+        <a
+          href="mailto:erikaaraujodeoliveiracorrea@gmail.com?subject=Olá, vim pelo Portfólio!"
+        >
+          <address class="arroba">
+            erikaaraujodeoliveiracorrea@gmail.com
+          </address>
+        </a>
         <div class="boxLink">
           <a
             target="_blank"
@@ -310,15 +328,17 @@
             <img
               class="link animate from-right"
               src="./assets/img/whatsApp.png"
-              alt=""
+              alt="imagem de whatsApp"
             />
           </a>
         </div>
-        <a
-          href="mailto:erikaestudosaraujo@gmail.com?subject=Olá, vim pelo Portfólio!"
+        <!-- <a
+          href="mailto:erikaaraujodeoliveiracorrea@gmail.com?subject=Olá, vim pelo Portfólio!"
         >
-          <address class="arroba">erikaestudosaraujo@gmail.com</address>
-        </a>
+          <address class="arroba">
+            erikaaraujodeoliveiracorrea@gmail.com
+          </address>
+        </a>-->
 
         <div class="thanks thanks-brilho">
           <span>O</span><span>b</span><span>r</span><span>i</span><span>g</span

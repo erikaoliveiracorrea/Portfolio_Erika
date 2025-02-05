@@ -63,6 +63,7 @@
   font-weight: 400;
   font-family: inherit;
   text-transform: uppercase;
+  cursor: pointer;
   color: goldenrod;
   background-color: white;
   border: 2px solid goldenrod;
@@ -135,12 +136,12 @@
     flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .section-contatos {
     padding: 0;
   }
   .select {
-    margin: auto;
+    margin: 20px auto 0;
     gap: 10px;
   }
   .formulario {

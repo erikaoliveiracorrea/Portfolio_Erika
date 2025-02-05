@@ -1,6 +1,6 @@
 .section-sobre {
   width: 100%;
-  height: calc(100dvh - 100px);
+  padding-bottom: 30px;
   background-image: url(../../assets/img/cabeçalho.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -11,7 +11,7 @@
 }
 
 .titulo-animado {
-  width: 465px;
+  width: 645px;
   height: 90px;
   display: flex;
   justify-content: center;
@@ -56,18 +56,16 @@
 }
 
 .boxPerfilTexto {
-  width: 80%;
+  width: 90%;
   height: auto;
   gap: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .boxPerfil {
   width: 290px;
-  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,54 +92,39 @@
   }
 }
 .boxTexto {
-  width: 66%;
+  width: 74%;
   height: auto;
   border-left: 2px solid goldenrod;
   padding: 15px;
 }
+
 .boxTexto p {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.5;
   text-align: justify;
   font-family: "Trebuchet MS", sans-serif;
 }
-
-@media (max-width: 1280px) {
-  .section-sobre {
-    height: auto;
-    padding-top: 20px;
-  }
-  .boxPerfilTexto {
-    width: 95%;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 940px) {
+@media screen and (max-width: 768px) {
   .boxPerfilTexto {
     flex-direction: column;
   }
   .boxTexto {
-    width: 90%;
-  }
-  .boxTexto p {
-    font-size: 28px;
+    border: none;
+    width: 100%;
+    padding: 0;
   }
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .titulo-animado {
     width: 90%;
   }
   .welcome {
-    font-size: 40px;
+    font-size: 35px;
   }
-
-  .boxTexto {
-    width: 90%;
-    border: none;
-    padding: 0;
-  }
-  .boxTexto p {
-    font-size: 20px;
+}
+@media screen and (max-width: 400px) {
+  .welcome {
+    font-size: 30px;
   }
 }

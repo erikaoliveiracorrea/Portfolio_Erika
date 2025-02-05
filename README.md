@@ -26,7 +26,7 @@ Confira alguns dos projetos que desenvolvi:
 
 Sinta-se à vontade para entrar em contato comigo:
 
-- **Email:** [erikaestudosaraujo@gmail.com](mailto:erikaestudosaraujo@gmail.com)
+- **Email:** [erikaaraujodeoliveiracorrea@gmail.com](mailto:erikaestudosaraujo@gmail.com)
 - **LinkedIn:** [Erika Oliveira](https://www.linkedin.com/in/erika-oliveira-11302432a/)
 - **GitHub:** [ErikaEstudos](https://github.com/ErikaEstudos)
 

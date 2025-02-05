@@ -1,4 +1,4 @@
-.main-footer {
+footer {
   height: auto;
   padding: 40px;
   background-image: url(./../../assets/img/rodapé.png);
@@ -31,16 +31,16 @@
   border: 3px solid goldenrod;
   position: relative;
 }
+
 .arroba {
   margin: 15px;
   font-size: 25px;
-  color: goldenrod;
-  text-decoration: none;
+  color: white;
   font-family: "Trebuchet MS";
+  transition: 200ms ease-in-out;
 }
 .arroba:hover {
-  color: white;
-  font-weight: 600;
+  transform: scale(1.1);
 }
 
 .thanks {
@@ -161,7 +161,7 @@
   }
 }
 
-@media (max-width: 1250px) {
+@media screen and (max-width: 1250px) {
   .boxLink {
     width: auto;
     gap: 40px;
@@ -170,10 +170,8 @@
     width: 95%;
   }
 }
-
-@media (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .arroba {
-    font-size: 22px;
-    color: white;
+    font-size: 1.15rem;
   }
 }

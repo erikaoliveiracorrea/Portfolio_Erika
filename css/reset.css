@@ -2,15 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+}
+html {
   scroll-behavior: smooth;
 }
-
 body {
-  scroll-behavior: smooth;
   background-image: url(./../assets/img/fundo.webp);
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
 }
-
+/*----RESET DO SCROLL-----*/
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -21,10 +22,7 @@ body {
   background-color: white;
   border-radius: 10px;
 }
-
-a {
-  text-decoration: none;
-}
+/*-----RESET DOS TÍTULOS DAS SESSÕES----*/
 .title-section {
   text-transform: uppercase;
   letter-spacing: 15px;
@@ -50,7 +48,7 @@ a {
   transform: translate(0);
   opacity: 1;
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .title-section {
     font-size: 22px;
     letter-spacing: 8px;
