@@ -34,4 +34,4 @@ Sinta-se à vontade para entrar em contato comigo:
 - **LinkedIn:** [Erika Oliveira](https://www.linkedin.com/in/erika-oliveira-11302432a/)
 - **GitHub:** [ErikaEstudos](https://github.com/ErikaEstudos)
 
-Obrigado por visitar meu portfólio!
+Obrigada por visitar meu portfólio!

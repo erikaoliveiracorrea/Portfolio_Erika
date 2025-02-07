@@ -1,7 +1,7 @@
 .section-sobre {
   width: 100%;
   padding-bottom: 30px;
-  background-image: url(../../assets/img/cabeçalho.png);
+  background-image: url(../../assets/img/fundo-cabeçalho.png);
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
