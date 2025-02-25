@@ -1,0 +1,41 @@
+.box-dark {
+  width: 60px;
+  height: 38px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+label.btn-dark {
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  cursor: pointer;
+  background-image: url(../../assets/img/sol-animado.gif);
+  background-size: cover;
+  border: 1px solid black;
+  border-radius: 50%;
+  transition: 200ms ease-in-out;
+}
+
+.btn-dark.btn-dark_active {
+  background-image: url(../../assets/img/lua1.gif) !important;
+  /* background-color: black !important;*/
+  border: 1px solid black !important;
+  transform: translateX(70%);
+}
+.body-dark_active {
+  background-image: url(../../assets/img/fundo-body.png);
+}
+
+@media screen and (max-width: 767px) {
+  .box-dark {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}

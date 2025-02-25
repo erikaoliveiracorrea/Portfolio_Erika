@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: url(./../assets/img/fundo-body.png);
+  background-image: url(../assets/img/fundo-branco.jpg);
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
 }
 /*----RESET DO SCROLL-----*/
@@ -29,7 +29,7 @@ body {
   font-family: "Goblin One", sans-serif;
   font-size: 30px;
   text-align: center;
-  color: goldenrod;
+  color: black;
 }
 .animate {
   opacity: 0;

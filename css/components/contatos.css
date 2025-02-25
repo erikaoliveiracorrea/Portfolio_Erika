@@ -78,7 +78,7 @@
 
 .boxPulsar {
   width: 450px;
-  height: 400px;
+  height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,7 +101,10 @@
   bottom: 35px;
   border-radius: 50%;
   border: 2px solid goldenrod;
-  animation: zap 1.5s linear infinite;
+  outline: 2px solid black;
+  box-shadow: 0 0 10px goldenrod, 0 0 20px goldenrod, 0 0 30px goldenrod,
+    0 0 40px goldenrod;
+  animation: arroba 1.5s linear infinite;
   opacity: 0;
 }
 
@@ -109,7 +112,7 @@
   animation-delay: 0.5s;
 }
 
-@keyframes zap {
+@keyframes arroba {
   0% {
     transform: scale(0.5);
     opacity: 0;
@@ -147,5 +150,8 @@
   .formulario {
     width: 95%;
     padding: 10px;
+  }
+  .boxPulsar {
+    height: 420px;
   }
 }

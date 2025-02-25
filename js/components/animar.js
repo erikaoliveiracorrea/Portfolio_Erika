@@ -1,10 +1,15 @@
-const menuDiv = document.getElementById('menu-mobile');
-const btnAnimar = document.getElementById('btn-menu');
+const btnMenu = document.getElementById("btn-menu");
+const menuMobile = document.getElementById("menu-mobile");
+const bodyHidden = document.querySelector("body");
 
-menuDiv.addEventListener('click', animarMenu)
+btnMenu.addEventListener("click", () => {
+  btnMenu.classList.toggle("ativo");
+  menuMobile.classList.toggle("abrir");
+  //body.style.overflow = menuMobile.classList.contains("abrir") ? "hidden" : "";
 
-function animarMenu(){
-    menuDiv.classList.toggle('abrir')
-    btnAnimar.classList.toggle('ativo')
-}
-
+  if (menuMobile.classList.contains("abrir")) {
+    bodyHidden.style.overflow = "hidden";
+  } else {
+    bodyHidden.style.overflow = "";
+  }
+});

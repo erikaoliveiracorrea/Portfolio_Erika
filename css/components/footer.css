@@ -29,18 +29,24 @@ footer {
   height: 60px;
   border-radius: 50%;
   border: 3px solid goldenrod;
+  outline: 1px solid black;
   position: relative;
+  transition: 200ms ease-in-out;
+}
+.boxLink .link:hover {
+  box-shadow: 0 0 10px goldenrod, 0 0 15px goldenrod, 0 0 20px goldenrod,
+    0 0 25px goldenrod;
 }
 
 .arroba {
   margin: 15px;
   font-size: 25px;
-  color: white;
+  color: black;
   font-family: "Trebuchet MS";
   transition: 200ms ease-in-out;
 }
 .arroba:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .thanks {

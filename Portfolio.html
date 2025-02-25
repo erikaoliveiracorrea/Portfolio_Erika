@@ -42,6 +42,7 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/components/header.css" />
+    <link rel="stylesheet" href="css/components/btn-dark.css" />
     <link rel="stylesheet" href="css/components/sobre.css" />
     <link rel="stylesheet" href="css/components/habilidades.css" />
     <link rel="stylesheet" href="css/components/projetos.css" />
@@ -54,6 +55,11 @@
     <header class="section-header">
       <nav class="menu-nav">
         <a class="erikaOliveira" href="Portfolio.html">Erika Oliveira</a>
+        <input type="checkbox" id="btn-dark" hidden />
+
+        <div class="box-dark">
+          <label class="btn-dark" for="btn-dark"> </label>
+        </div>
 
         <div class="box-menu">
           <a href="#sobre">Sobre</a>
@@ -62,7 +68,7 @@
           <a href="#contatos">Contatos</a>
         </div>
 
-        <button class="button-mobile" onclick="animarMenu()" id="btn-menu">
+        <button class="button-mobile" id="btn-menu">
           <span class="linha"></span>
           <span class="linha"></span>
           <span class="linha"></span>
@@ -89,27 +95,25 @@
           />
         </div>
         <div class="boxTexto">
-          <strong>
-            <p>
-              Olá, minha jornada no desenvolvimento Web começou com a
-              curiosidade de como eram criadas as páginas de web. Com o tempo,
-              essa curiosidade se transformou em um caminho de aprendizado
-              Front-End, buscando sempre as melhores práticas para criar designs
-              responsivos e interativos.
-            </p>
-            <p>
-              Ao aprimorar meus conhecimentos, percebi que minha afinidade com o
-              desenvolvimento ia além do Front-End. Meu interesse natural por
-              resolver desafios lógicos e arquitetar sistemas me levou ao
-              Back-End, onde sigo explorando tecnologias como Node.js, bancos de
-              dados (MongoDb, Msql) e APIs.
-            </p>
-            <p>
-              Sempre buscando aprender mais, acompanhando as últimas tendências
-              e avanços na tecnologia. Sinta-se à vontade para explorar os
-              projetos em meu portfólio.
-            </p>
-          </strong>
+          <p>
+            Olá, minha jornada no desenvolvimento Web começou com a curiosidade
+            de como eram criadas as páginas de web. Com o tempo, essa
+            curiosidade se transformou em um caminho de aprendizado Front-End,
+            buscando sempre as melhores práticas para criar designs responsivos
+            e interativos.
+          </p>
+          <p>
+            Ao aprimorar meus conhecimentos, percebi que minha afinidade com o
+            desenvolvimento ia além do Front-End. Meu interesse natural por
+            resolver desafios lógicos e arquitetar sistemas me levou ao
+            Back-End, onde sigo explorando tecnologias como Node.js, bancos de
+            dados (MongoDb, Msql) e APIs.
+          </p>
+          <p>
+            Sempre buscando aprender mais, acompanhando as últimas tendências e
+            avanços na tecnologia. Sinta-se à vontade para explorar os projetos
+            em meu portfólio.
+          </p>
         </div>
       </div>
     </main>
@@ -355,6 +359,7 @@
     </div>
 
     <script src="js/components/animar.js"></script>
+    <script src="js/components/dark-mode.js"></script>
     <script src="js/components/botao-Topo.js"></script>
     <script src="js/components/animarPagina.js"></script>
     <script src="js/components/formulario.js"></script>

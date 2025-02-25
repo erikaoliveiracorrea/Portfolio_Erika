@@ -2,6 +2,7 @@ header {
   width: 100%;
   height: 100px;
   padding: 0 60px;
+  position: relative;
   background-image: url(./../../assets/img/fundo-barra.png);
 }
 
@@ -20,7 +21,7 @@ header {
   text-shadow: 5px 5px 5px black;
   border-radius: 50px;
   box-shadow: 15px 15px 20px black;
-  font-size: 3.75rem;
+  font-size: 3rem;
   font-weight: 900;
   letter-spacing: 0.4rem;
   font-family: "Dancing Script", Verdana, Geneva, Tahoma, sans-serif;
@@ -40,13 +41,13 @@ header {
 
 .box-menu a {
   color: black;
-  text-decoration: none;
   padding: 5px;
   font-size: 26px;
   font-weight: 900;
   position: relative;
   font-family: "Dancing Script", "Fira Code", sans-serif;
 }
+
 .box-menu a::after {
   content: " ";
   width: 0px;
@@ -55,8 +56,9 @@ header {
   position: absolute;
   bottom: 2px;
   left: 0;
-  transition: width 0.5s;
+  transition: width 0.5s ease-in-out;
 }
+
 .box-menu a:hover::after {
   width: 90%;
 }
@@ -106,8 +108,6 @@ header {
 /*-----menu mobile------*/
 
 .menu-mobile {
-  background-color: #0000008c;
-  backdrop-filter: blur(10px);
   position: absolute;
   top: 80px;
   left: 0;
@@ -117,12 +117,15 @@ header {
   transition: 0.5s;
   overflow: hidden;
   z-index: 9999;
+  background-color: #0000008c;
+  backdrop-filter: blur(10px);
 }
 
 .menu-mobile a {
   color: white;
   text-decoration: none;
   display: block;
+  margin-top: 20px;
   padding: 20px 30px;
   font-size: 16pt;
 }
@@ -131,13 +134,13 @@ header {
   background-color: rgba(240, 177, 18, 0.464);
 }
 
-@media screen and (min-width: 769px) and (max-width: 1000px) {
+@media screen and (min-width: 768px) and (max-width: 960px) {
   header {
-    padding: 0 15px;
+    padding: 0 5px;
   }
   .erikaOliveira {
     padding: 5px 15px;
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -150,7 +153,7 @@ header {
   }
   .menu-mobile.abrir {
     visibility: visible;
-    height: 120%;
+    height: 100dvh;
   }
 }
 @media screen and (max-width: 767px) {
@@ -159,11 +162,12 @@ header {
   }
   .erikaOliveira {
     padding: 5px 7px;
-    font-size: 2.75rem;
+    font-size: 35px;
   }
 }
-@media (max-width: 360px) {
+@media screen and (max-width: 360px) {
   .erikaOliveira {
-    font-size: 2rem;
+    padding: 5px;
+    font-size: 25px;
   }
 }

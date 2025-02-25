@@ -28,10 +28,10 @@ Confira alguns dos projetos que desenvolvi:
 
 ## Contato
 
-Sinta-se à vontade para entrar em contato comigo:
+Sinta-se à vontade para entrar em contato:
 
-- **Email:** [erikaaraujodeoliveiracorrea@gmail.com](mailto:erikaestudosaraujo@gmail.com)
-- **LinkedIn:** [Erika Oliveira](https://www.linkedin.com/in/erika-oliveira-11302432a/)
-- **GitHub:** [ErikaEstudos](https://github.com/ErikaEstudos)
+- **Email:** [erikaaraujodeoliveiracorrea@gmail.com]
+- **LinkedIn:** [Linkedin](https://www.linkedin.com/in/erika-oliveira-11302432a/)
+- **GitHub:** [Github](https://github.com/ErikaEstudos)
 
 Obrigada por visitar meu portfólio!
