@@ -1,34 +1,49 @@
 .box-dark {
-  width: 60px;
-  height: 38px;
+  width: 70px;
+  height: 35px;
   padding: 2px;
   display: flex;
   align-items: center;
   border-radius: 20px;
-  background-color: white;
+  background-color: #c3c3c3;
   border: 2px solid black;
+  position: relative;
 }
 
-label.btn-dark {
-  width: 30px;
-  height: 30px;
-  padding: 4px;
-  cursor: pointer;
+.btn-dark {
+  width: 25px;
+  height: 25px;
   background-image: url(../../assets/img/sol-animado.gif);
   background-size: cover;
-  border: 1px solid black;
+  /*background-color: goldenrod;*/
   border-radius: 50%;
-  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  position: absolute;
+  left: 2px;
+  transition: 0.5s;
+}
+.box-dark.dark {
+  background-color: #8b8989;
+}
+.box-dark.dark .btn-dark {
+  left: 39px;
+  background-image: url(../../assets/img/lua.jpeg);
+  background-size: cover;
+  /*background-color: black;*/
 }
 
-.btn-dark.btn-dark_active {
-  background-image: url(../../assets/img/lua1.gif) !important;
-  /* background-color: black !important;*/
-  border: 1px solid black !important;
-  transform: translateX(70%);
-}
-.body-dark_active {
+body.dark {
   background-image: url(../../assets/img/fundo-body.png);
+}
+body.dark p {
+  color: white;
+}
+
+body.dark h2 {
+  color: goldenrod;
+}
+body.dark address {
+  color: white;
 }
 
 @media screen and (max-width: 767px) {
