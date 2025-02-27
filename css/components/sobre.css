@@ -1,6 +1,7 @@
 .section-sobre {
   width: 100%;
-  padding-bottom: 30px;
+  height: calc(100dvh - 100px);
+  padding-bottom: 20px;
   background-image: url(../../assets/img/fundo-cabeçalho.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -59,22 +60,18 @@
 
 .boxPerfilTexto {
   width: 90%;
-  gap: 20px;
-  display: flex;
-  align-items: start;
-  justify-content: center;
+  height: auto;
 }
 
 .boxPerfil {
-  max-width: 290px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 290px;
 }
 
 .logoPerfil {
+  float: left;
   width: 100%;
   height: 100%;
+  margin-right: 10px;
   border-top-left-radius: 30%;
   border: 3px solid goldenrod;
   outline: 3px solid white;
@@ -94,10 +91,9 @@
   }
 }
 .boxTexto {
-  width: 55%;
-  max-height: 100dvh;
-  border-left: 2px solid goldenrod;
-  padding: 0 15px;
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
 }
 
 .boxTexto p {
@@ -107,7 +103,10 @@
   font-size: 22px;
   font-family: "Trebuchet MS", sans-serif;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
+  .section-sobre {
+    height: auto;
+  }
   .boxTexto {
     width: 100%;
   }
@@ -123,11 +122,19 @@
 }
 @media screen and (max-width: 400px) {
   .boxPerfilTexto {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   .welcome {
     font-size: 30px;
+  }
+  .boxPerfil {
+    width: 100%;
+  }
+  .logoPerfil {
+    float: none;
   }
   .boxTexto {
     border: none;

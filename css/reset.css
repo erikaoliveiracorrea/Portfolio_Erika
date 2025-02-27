@@ -33,9 +33,10 @@ body {
   text-align: center;
   color: black;
 }
+/*---ANIMAÇÃO DOS TÍTULOS E LINKS DE CONTATOS----*/
 .animate {
   opacity: 0;
-  transition: 2s;
+  transition: 3s;
 }
 
 .animate.from-left {

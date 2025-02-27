@@ -152,7 +152,6 @@ header {
   }
   .menu-mobile.abrir {
     visibility: visible;
-    height: 100dvh;
   }
 }
 @media screen and (max-width: 767px) {
@@ -164,7 +163,7 @@ header {
     font-size: 35px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 500px) {
   .erikaOliveira {
     padding: 5px;
     font-size: 25px;

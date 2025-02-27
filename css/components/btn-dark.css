@@ -5,8 +5,9 @@
   display: flex;
   align-items: center;
   border-radius: 20px;
-  background-color: #c3c3c3;
+  background-color: rgb(170, 213, 230);
   border: 2px solid black;
+  box-shadow: -10px 0 10px yellow, -20px -3px 20px yellow;
   position: relative;
   cursor: pointer;
 }
@@ -15,6 +16,7 @@
   width: 25px;
   height: 25px;
   background-image: url(../../assets/img/sol-animado.gif);
+  box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow;
   background-size: cover;
   border-radius: 50%;
   border: 1px solid black;
@@ -23,12 +25,15 @@
   transition: 0.3s;
 }
 .box-dark.dark {
-  background-color: #8b8989;
+  background-color: #000;
+  box-shadow: 10px 0 10px white, 20px 3px 20px white;
 }
 .box-dark.dark .btn-dark {
   left: 39px;
   background-image: url(../../assets/img/lua.jpeg);
   background-size: cover;
+  box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white,
+    0 0 50px white;
 }
 
 body.dark {
@@ -41,14 +46,14 @@ body.dark .section-sobre .titulo-animado .welcome {
   color: white;
   text-shadow: 10px 10px 10px black;
 }
-body.dark h2 {
+body.dark .title-section {
   color: goldenrod;
 }
 body.dark footer .todosItens .arroba {
   color: white;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 320px) {
   .box-dark {
     position: absolute;
     bottom: -20px;
