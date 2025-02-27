@@ -9,6 +9,8 @@ html {
 }
 body {
   background-image: url(../assets/img/fundo-branco.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
 }
 /*----RESET DO SCROLL-----*/

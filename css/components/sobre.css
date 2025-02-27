@@ -11,8 +11,9 @@
 }
 
 .titulo-animado {
-  width: 645px;
-  height: 90px;
+  width: 800px;
+  height: fit-content;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,12 +28,13 @@
   }
 }
 .welcome {
+  padding: 5px 0;
   text-align: center;
   white-space: nowrap;
-  font-size: 60px;
+  font-size: 70px;
   overflow: hidden;
-  color: white;
-  text-shadow: 3px 3px 10px black;
+  color: black;
+  text-shadow: 3px 3px 10px white;
   font-family: "Dancing Script";
   animation: cursor 500ms steps(30) infinite normal,
     tempo 3s steps(40) 1s normal both;
@@ -57,7 +59,6 @@
 
 .boxPerfilTexto {
   width: 90%;
-  height: auto;
   gap: 20px;
   display: flex;
   align-items: start;
@@ -65,7 +66,7 @@
 }
 
 .boxPerfil {
-  width: 290px;
+  max-width: 290px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,40 +94,43 @@
   }
 }
 .boxTexto {
-  width: 74%;
-  height: auto;
+  width: 55%;
+  max-height: 100dvh;
   border-left: 2px solid goldenrod;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .boxTexto p {
+  text-align: justify;
+  text-indent: 1em;
   color: black;
   font-size: 22px;
-  line-height: 1.5;
-  text-align: justify;
   font-family: "Trebuchet MS", sans-serif;
 }
-@media screen and (max-width: 768px) {
-  .boxPerfilTexto {
-    flex-direction: column;
-    align-items: center;
-  }
+@media screen and (max-width: 1200px) {
   .boxTexto {
-    border: none;
     width: 100%;
-    padding: 0;
   }
 }
 @media screen and (max-width: 767px) {
   .titulo-animado {
     width: 90%;
+    margin: 25px 0;
   }
   .welcome {
     font-size: 35px;
   }
 }
 @media screen and (max-width: 400px) {
+  .boxPerfilTexto {
+    flex-direction: column;
+    align-items: center;
+  }
   .welcome {
     font-size: 30px;
+  }
+  .boxTexto {
+    border: none;
+    padding: 0;
   }
 }
