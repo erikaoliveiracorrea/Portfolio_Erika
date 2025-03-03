@@ -17,6 +17,7 @@ footer {
   height: 80px;
   margin: 15px 0;
   border: 2px solid goldenrod;
+  outline: 2px solid black;
   border-radius: 10px;
 }
 .boxLink {
