@@ -32,6 +32,6 @@ Sinta-se à vontade para entrar em contato:
 
 - **Email:** [erikaaraujodeoliveiracorrea@gmail.com]
 - **LinkedIn:** [Linkedin](https://www.linkedin.com/in/erika-oliveira-11302432a/)
-- **GitHub:** [Github](https://github.com/ErikaEstudos)
+- **GitHub:** [Github](https://github.com/erikaoliveiracorrea)
 
 Obrigada por visitar meu portfólio!
