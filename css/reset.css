@@ -8,9 +8,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: url(../assets/img/fundo-branco.jpg);
-  background-repeat: no-repeat;
+  background-image: url(/assets/img/céu-branco.webp);
   background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
 }
 /*----RESET DO SCROLL-----*/
@@ -31,7 +31,8 @@ body {
   font-family: "Goblin One", sans-serif;
   font-size: 30px;
   text-align: center;
-  color: black;
+  color: goldenrod;
+  -webkit-text-stroke: 1px black;
 }
 /*---ANIMAÇÃO DOS TÍTULOS E LINKS DE CONTATOS----*/
 .animate {

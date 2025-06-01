@@ -20,7 +20,7 @@
   width: 550px;
   height: fit-content;
   padding: 20px;
-  background-image: url(./../../assets/img/contato-email.jpg);
+  background-image: url(/assets/img/contato-email.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;

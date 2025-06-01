@@ -15,7 +15,7 @@
 .btn-dark {
   width: 25px;
   height: 25px;
-  background-image: url(../../assets/img/sol-animado.gif);
+  background-image: url(/assets/img/sol-animado.gif);
   box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow;
   background-size: cover;
   border-radius: 50%;
@@ -26,34 +26,47 @@
 }
 .box-dark.dark {
   background-color: #000;
+  border: 1px solid wheat;
   box-shadow: 10px 0 10px white, 20px 3px 20px white;
 }
 .box-dark.dark .btn-dark {
   left: 39px;
-  background-image: url(../../assets/img/lua.jpeg);
+  background-image: url(/assets/img/lua.jpeg);
   background-size: cover;
   box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white,
     0 0 50px white;
 }
 
 body.dark {
-  background-image: url(../../assets/img/fundo-body.png);
+  background-image: url(/assets/img/céu-darck4.webp);
+  background-size: contain;
+  background-repeat: repeat;
 }
-body.dark .section-sobre .boxPerfilTexto .boxTexto p {
+body.dark header .erikaOliveira {
   color: white;
+  box-shadow: -5px -0 3px black, 3px 0px 3px white;
+  text-shadow: -5px -0px 5px black;
+}
+body.dark header .menu-nav .box-menu a {
+  color: white;
+  text-shadow: -5px -0px 5px white, 10px 0px 5px black;
 }
 body.dark .section-sobre .titulo-animado .welcome {
   color: white;
   text-shadow: 10px 10px 10px black;
 }
-body.dark .title-section {
-  color: goldenrod;
+body.dark .section-sobre .boxPerfilTexto .boxTexto p {
+  color: white;
+}
+
+body.dark footer .boxLink .link:hover {
+  box-shadow: 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 25px white;
 }
 body.dark footer .arroba {
   color: white;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
   .box-dark {
     position: absolute;
     bottom: -20px;
