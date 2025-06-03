@@ -133,7 +133,8 @@
     flex-direction: column;
   }
   .boxPerfil {
-    width: 100%;
+    width: 70%;
+    height: 300px;
     margin: 0;
   }
   .logoPerfil {
