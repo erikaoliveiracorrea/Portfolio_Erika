@@ -19,7 +19,8 @@ header {
   padding: 5px 15px;
   color: white;
   flex-wrap: nowrap;
-  box-shadow: 10px 0px 10px yellow, -10px 0 5px black;
+  box-shadow: inset -10px 0px 10px yellow, 5px 0px 10px #f1f121,
+    -10px 0 5px black;
   text-shadow: -5px -5px 5px black;
   border-radius: 50px;
   font-size: 3rem;
@@ -41,12 +42,12 @@ header {
 }
 
 .box-menu a {
-  color: black;
+  color: white;
   padding: 5px;
   font-size: 26px;
   font-weight: 900;
   position: relative;
-  text-shadow: -5px -0px 5px yellow, 8px 0 5px black;
+  text-shadow: -5px -0px 10px yellow, 7px 0 3px black;
   font-family: "Dancing Script", "Fira Code", sans-serif;
 }
 
@@ -86,22 +87,22 @@ header {
   margin: 5px auto;
   position: relative;
   transform-origin: center;
-  transition: 0.2;
+  transition: 0.2s;
 }
 
 .button-mobile.ativo {
-  border: 4px solid white;
+  border: 2px solid white;
   box-shadow: yellow 0px 54px 55px, yellow 0px -12px 30px, yellow 0px 4px 6px,
     yellow 0px 12px 13px, yellow 0px -3px 5px;
 }
 
 .button-mobile.ativo .linha:nth-child(1) {
   transform: translateY(8px) rotate(-55deg);
-  background-color: yellow;
+  background-color: white;
 }
 .button-mobile.ativo .linha:nth-child(3) {
   transform: translateY(-8px) rotate(55deg);
-  background-color: yellow;
+  background-color: white;
 }
 .button-mobile.ativo .linha:nth-child(2) {
   width: 0;
@@ -114,11 +115,11 @@ header {
   top: 80px;
   left: 0;
   width: 100%;
-  height: 100dvh;
+  height: 0;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
   overflow: hidden;
-  z-index: 9999;
+  z-index: 99;
   background-color: #0000008c;
   backdrop-filter: blur(10px);
 }
@@ -132,7 +133,7 @@ header {
 }
 
 .menu-mobile a:hover {
-  background-color: rgba(240, 177, 18, 0.464);
+  background-color: #f0b11276;
 }
 
 @media screen and (min-width: 768px) and (max-width: 960px) {
@@ -154,6 +155,7 @@ header {
   }
   .menu-mobile.abrir {
     visibility: visible;
+    height: 100dvh;
   }
 }
 @media screen and (max-width: 767px) {
