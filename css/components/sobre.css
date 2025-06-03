@@ -35,7 +35,7 @@
   font-size: 70px;
   overflow: hidden;
   color: white;
-  text-shadow: -8px 0px 10px yellow, 1px 10px 3px black;
+  text-shadow: 0px -3px 15px yellow, 1px 6px 3px black;
   font-family: "Dancing Script";
   animation: cursor 500ms steps(30) infinite normal,
     tempo 3s steps(40) 1s normal both;
@@ -98,7 +98,7 @@
 }
 
 .boxTexto p {
-  padding: 10px;
+  padding: 8px 10px;
   text-align: justify;
   text-indent: 1em;
   color: black;
