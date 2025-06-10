@@ -65,14 +65,14 @@
 
 .boxPerfil {
   width: 290px;
+  height: 350px;
   float: left;
-  margin: 10px;
+  margin: 0 10px 10px 0;
 }
 
 .logoPerfil {
   width: 100%;
   height: 100%;
-  margin-right: 10px;
   border-top-left-radius: 30%;
   border-radius: 30% 3% 3% 3%;
   border: 3px solid goldenrod;
