@@ -58,7 +58,9 @@ body.dark .section-sobre .titulo-animado .welcome {
 body.dark .section-sobre .boxPerfilTexto .boxTexto p {
   color: white;
 }
-
+body.dark .section-contatos {
+  background: transparent;
+}
 body.dark footer .boxLink .link:hover {
   box-shadow: 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 25px white;
 }

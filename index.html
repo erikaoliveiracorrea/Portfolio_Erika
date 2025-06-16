@@ -40,6 +40,7 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/css/components/preload.css" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/components/header.css" />
     <link rel="stylesheet" href="/css/components/btn-dark.css" />
@@ -52,6 +53,10 @@
   </head>
 
   <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
     <header class="section-header">
       <nav class="menu-nav">
         <a class="erikaOliveira" href="index.html">Erika Oliveira</a>
@@ -217,7 +222,7 @@
               loading="lazy"
               class="imgCard"
               src="/assets/img/computadorRosa.webp"
-              alt="imagem de relógio"
+              alt="computador site"
             />
           </a>
         </div>
@@ -304,29 +309,24 @@
 
           <button class="enviar" type="submit">enviar</button>
         </form>
-
-        <div class="boxPulsar">
-          <img
-            loading="lazy"
-            class="imgPulsar"
-            src="/assets/img/contato-arroba.webp"
-            alt="imagem de arroba"
-          />
-        </div>
       </div>
     </section>
 
     <footer class="main-footer">
       <div class="todosItens">
-        <a href="#sobre">
-          <abbr title="Erika Oliveira"
-            ><img
+        <a
+          href="mailto:erikaaraujodeoliveiracorrea@gmail.com?subject=Olá, vim pelo Portfólio!"
+        >
+          <div class="boxPulsar">
+            <img
               loading="lazy"
-              class="logo-eo"
-              src="/assets/img/LOGO-EO-2.webp"
-              alt="imagem logo letra EO"
-          /></abbr>
+              class="imgPulsar"
+              src="/assets/img/contato-arroba.webp"
+              alt="imagem de arroba"
+            />
+          </div>
         </a>
+
         <a
           href="mailto:erikaaraujodeoliveiracorrea@gmail.com?subject=Olá, vim pelo Portfólio!"
         >
@@ -344,16 +344,16 @@
               alt="imagem linkedin"
             />
           </a>
-          <a id="btn-download" href="#">
-            <abbr title="Download de Curriculum">
-              <img
+          <a href="index.html">
+            <abbr title="Erika Oliveira"
+              ><img
                 loading="lazy"
-                class="link"
-                src="/assets/img/img-dowload.webp"
-                alt="imagem download de curriculum"
-              />
-            </abbr>
+                class="logo-eo"
+                src="/assets/img/LOGO-EO-2.webp"
+                alt="imagem logo letra EO"
+            /></abbr>
           </a>
+
           <a target="_blank" href="https://github.com/erikaoliveiracorrea">
             <img
               loading="lazy"
@@ -380,7 +380,7 @@
     <div class="botao-Topo">
       <i class="arrow up"></i>
     </div>
-
+    <script src="/js/components/preload.js"></script>
     <script src="/js/components/btn-Mobile.js"></script>
     <script src="/js/components/dark-mode.js"></script>
     <script src="/js/components/botao-Topo.js"></script>

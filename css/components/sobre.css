@@ -75,7 +75,7 @@
   height: 100%;
   border-top-left-radius: 30%;
   border-radius: 30% 3% 3% 3%;
-  border: 3px solid goldenrod;
+  border: 3px solid #daa520;
   outline: 3px solid white;
   animation: logoPerfil 2s ease-in-out;
 }
