@@ -40,7 +40,7 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/components/preload.css" />
+
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/components/header.css" />
     <link rel="stylesheet" href="/css/components/btn-dark.css" />
@@ -53,10 +53,6 @@
   </head>
 
   <body>
-    <!-- Preloader -->
-    <div class="preloader">
-      <div class="loader"></div>
-    </div>
     <header class="section-header">
       <nav class="menu-nav">
         <a class="erikaOliveira" href="index.html">Erika Oliveira</a>
@@ -131,72 +127,81 @@
       <h2 class="title-section animate from-right">habilidades</h2>
       <div class="habilidades">
         <div class="container-box">
-          <div class="box">
-            <img
-              loading="lazy"
-              class="img-habilidades"
-              src="/assets/img/habilidade-HTML.webp"
-              alt="Imagem HTML"
-            />
+          <div class="box-habilidades">
+            <div class="box">
+              <img
+                loading="lazy"
+                class="img-habilidades"
+                src="/assets/img/habilidade-HTML.webp"
+                alt="Imagem HTML"
+              />
+            </div>
+            <div class="box">
+              <img
+                loading="lazy"
+                class="img-habilidades"
+                src="/assets/img/habilidade-css.webp"
+                alt="Imagem CSS"
+              />
+            </div>
           </div>
-          <div class="box">
-            <img
-              loading="lazy"
-              class="img-habilidades"
-              src="/assets/img/habilidade-css.webp"
-              alt="Imagem CSS"
-            />
-          </div>
-          <div class="box">
-            <img
-              loading="lazy"
-              class="img-habilidades"
-              src="/assets/img/habilidade-JS.webp"
-              alt="Imagem JavaScript"
-            />
-          </div>
-          <div class="box">
-            <img
-              loading="lazy"
-              class="img-habilidades"
-              src="/assets/img/habilidade-node.webp"
-              alt="Imagem NODE"
-            />
+
+          <div class="box-habilidades">
+            <div class="box">
+              <img
+                loading="lazy"
+                class="img-habilidades"
+                src="/assets/img/habilidade-JS.webp"
+                alt="Imagem JavaScript"
+              />
+            </div>
+            <div class="box">
+              <img
+                loading="lazy"
+                class="img-habilidades"
+                src="/assets/img/habilidade-node.webp"
+                alt="Imagem NODE"
+              />
+            </div>
           </div>
         </div>
-
         <div class="container-box">
-          <div class="box box2">
-            <img
-              loading="lazy"
-              class="img-habilidades"
-              src="/assets/img/habilidade-github.webp"
-              alt="Imagem GitHub"
-            />
+          <div class="box-habilidades">
+            <div class="box box2">
+              <img
+                loading="lazy"
+                class="img-habilidades"
+                src="/assets/img/habilidade-github.webp"
+                alt="Imagem GitHub"
+              />
+            </div>
+            <div class="box box2">
+              <img
+                loading="lazy"
+                class="img-habilidades"
+                src="/assets/img/habilidade-git.webp"
+                alt="Imagem Git"
+              />
+            </div>
           </div>
-          <div class="box box2">
-            <img
-              loading="lazy"
-              class="img-habilidades"
-              src="/assets/img/habilidade-git.webp"
-              alt="Imagem Git"
-            />
-          </div>
-          <div class="box box2">
-            <img
-              loading="lazy"
-              class="img-habilidades"
-              src="/assets/img/habilidade-mySQL.webp"
-              alt="Imagem de mySQL"
-            />
-          </div>
-          <div class="box box2">
-            <img
-              loading="lazy"
-              class="img-habilidades"
-              src="/assets/img/habilidade-mongoDB.webp"
-              alt="Imagem mongoDB"
-            />
+
+          <div class="box-habilidades">
+            <div class="box box2">
+              <img
+                loading="lazy"
+                class="img-habilidades"
+                src="/assets/img/habilidade-mySQL.webp"
+                alt="Imagem de mySQL"
+              />
+            </div>
+            <div class="box box2">
+              <img
+                loading="lazy"
+                class="img-habilidades"
+                src="/assets/img/habilidade-mongoDB.webp"
+                alt="Imagem mongoDB"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -226,6 +231,7 @@
             />
           </a>
         </div>
+
         <div class="card-project animate from-right">
           <a href="https://pagina-mario.vercel.app"
             ><img
@@ -274,113 +280,118 @@
 
     <section id="contatos" class="section-contatos">
       <h2 class="title-section animate from-right">contatos</h2>
-      <div class="select">
-        <form
-          method="POST"
-          action="https://formsubmit.co/erikaestudosaraujo@gmail.com"
-          class="formulario"
-          id="formulario"
-          target="_blank"
-        >
-          <label for="name" class="label">Nome</label>
-          <input
-            id="name"
-            class="input"
-            type="text"
-            name="nome"
-            minlength="3"
-            maxlength="100"
-            required
-          />
+      <form
+        method="POST"
+        action="https://formsubmit.co/erikaestudosaraujo@gmail.com"
+        class="formulario"
+        id="formulario"
+        target="_blank"
+      >
+        <label for="name" class="label">Nome</label>
+        <input
+          id="name"
+          class="input"
+          type="text"
+          name="nome"
+          minlength="3"
+          maxlength="100"
+          required
+        />
 
-          <label for="email" class="label">Email</label>
-          <input id="email" class="input" type="email" name="email" required />
+        <label for="email" class="label">Email</label>
+        <input id="email" class="input" type="email" name="email" required />
 
-          <label for="mensagem" class="label">Mensagem</label>
-          <textarea
-            id="mensagem"
-            class="input textarea"
-            cols="60"
-            rows="10"
-            type="mensagem"
-            name="message"
-            required
-          ></textarea>
-
+        <label for="mensagem" class="label">Mensagem</label>
+        <textarea
+          id="mensagem"
+          class="input textarea"
+          cols="60"
+          rows="10"
+          type="mensagem"
+          name="message"
+          required
+        ></textarea>
+        <div class="box-enviar">
           <button class="enviar" type="submit">enviar</button>
-        </form>
+        </div>
+      </form>
+      <div class="select">
+        <div class="boxPulsar">
+          <img
+            loading="lazy"
+            class="imgPulsar"
+            src="/assets/img/contato-arroba.webp"
+            alt="imagem de arroba"
+          />
+        </div>
+        <ul class="boxLink">
+          <li class="animate from-left">
+            <a
+              target="_blank"
+              href="mailto:erikaaraujodeoliveiracorrea@gmail.com?subject=Olá, vim pelo Portfólio!"
+            >
+              <img
+                loading="lazy"
+                class="img-link"
+                src="/assets/img/img-carta.png"
+                alt="imagem de carta de email"
+              />
+              Email
+            </a>
+          </li>
+          <li class="">
+            <a target="_blank" href="https://github.com/erikaoliveiracorrea">
+              <img
+                loading="lazy"
+                class="img-link"
+                src="/assets/img/contato-github.webp"
+                alt="imagem GitHub"
+              />
+              GitHub
+            </a>
+          </li>
+          <li class="animate from-right">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/erika-oliveira-11302432a/"
+            >
+              <img
+                loading="lazy"
+                class="img-link"
+                src="/assets/img/contato-linkedin.webp"
+                alt="imagem linkedin"
+              />
+              Linkedin
+            </a>
+          </li>
+        </ul>
       </div>
+      <a href="index.html">
+        <abbr title="Erika Oliveira"
+          ><img
+            loading="lazy"
+            class="logo-eo"
+            src="/assets/img/LOGO-EO-2.webp"
+            alt="imagem logo letra EO"
+        /></abbr>
+      </a>
     </section>
 
-    <footer class="main-footer">
-      <div class="todosItens">
-        <a
-          href="mailto:erikaaraujodeoliveiracorrea@gmail.com?subject=Olá, vim pelo Portfólio!"
-        >
-          <div class="boxPulsar">
-            <img
-              loading="lazy"
-              class="imgPulsar"
-              src="/assets/img/contato-arroba.webp"
-              alt="imagem de arroba"
-            />
-          </div>
-        </a>
-
-        <a
-          href="mailto:erikaaraujodeoliveiracorrea@gmail.com?subject=Olá, vim pelo Portfólio!"
-        >
-          <address class="arroba">erika.aoliveiracorrea@gmail.com</address>
-        </a>
-        <div class="boxLink">
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/erika-oliveira-11302432a/"
-          >
-            <img
-              loading="lazy"
-              class="link animate from-left"
-              src="/assets/img/contato-linkedin.webp"
-              alt="imagem linkedin"
-            />
-          </a>
-          <a href="index.html">
-            <abbr title="Erika Oliveira"
-              ><img
-                loading="lazy"
-                class="logo-eo"
-                src="/assets/img/LOGO-EO-2.webp"
-                alt="imagem logo letra EO"
-            /></abbr>
-          </a>
-
-          <a target="_blank" href="https://github.com/erikaoliveiracorrea">
-            <img
-              loading="lazy"
-              class="link animate from-right"
-              src="/assets/img/contato-github.webp"
-              alt="imagem hub"
-            />
-          </a>
-        </div>
-
-        <div class="thanks thanks-brilho">
-          <span>O</span><span>b</span><span>r</span><span>i</span><span>g</span
-          ><span>a</span><span>d</span><span>a</span> <span>p</span
-          ><span>o</span><span>r</span> <span>v</span><span>i</span
-          ><span>s</span><span>i</span><span>t</span><span>a</span
-          ><span>r</span> <span>m</span><span>e</span><span>u</span>
-          <span>p</span><span>o</span><span>r</span><span>t</span><span>f</span
-          ><span>ó</span><span>l</span><span>i</span><span>o</span
-          ><span>!</span>
-        </div>
+    <footer>
+      <div class="thanks thanks-brilho">
+        <span>O</span><span>b</span><span>r</span><span>i</span><span>g</span
+        ><span>a</span><span>d</span><span>a</span> <span>p</span><span>o</span
+        ><span>r</span> <span>v</span><span>i</span><span>s</span><span>i</span
+        ><span>t</span><span>a</span><span>r</span> <span>m</span><span>e</span
+        ><span>u</span> <span>p</span><span>o</span><span>r</span><span>t</span
+        ><span>f</span><span>ó</span><span>l</span><span>i</span><span>o</span
+        ><span>!</span>
       </div>
     </footer>
 
     <div class="botao-Topo">
       <i class="arrow up"></i>
     </div>
-    <script src="/js/components/preload.js"></script>
     <script src="/js/components/btn-Mobile.js"></script>
     <script src="/js/components/dark-mode.js"></script>
     <script src="/js/components/botao-Topo.js"></script>

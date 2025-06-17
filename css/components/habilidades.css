@@ -2,15 +2,16 @@
   width: 100%;
   height: auto;
   overflow: hidden;
-  padding: 35px 0;
+  padding: 35px 5px;
 }
 
 .habilidades {
-  width: 80%;
+  max-width: 90%;
+  width: 100%;
   height: auto;
   margin: 20px auto;
   display: flex;
-  gap: 120px;
+  gap: 30px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -20,13 +21,22 @@
 .container-box {
   width: 100%;
   display: flex;
+  gap: 20px;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: nowrap;
 }
-
+.box-habilidades {
+  max-width: 45%;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
 .box {
-  width: 150px;
-  height: 150px;
+  max-width: 150px;
+  width: 100%;
   position: relative;
   background-color: black;
   border-radius: 30px;
@@ -35,18 +45,11 @@
   align-items: center;
   overflow: hidden;
 }
-
-.img-habilidades {
-  width: 90%;
-  position: relative;
-  z-index: 1;
-  border-radius: 30px;
-}
-
 .box::before {
   content: " ";
   position: absolute;
-  width: 100px;
+  max-width: 100px;
+  width: 100%;
   height: 200%;
   background: linear-gradient(180deg, #07e2f1, #eb9b05);
   animation: animate 3s linear infinite;
@@ -69,7 +72,8 @@
 .box2::before {
   content: " ";
   position: absolute;
-  width: 100px;
+  max-width: 100px;
+  width: 100%;
   height: 200%;
   background: linear-gradient(180deg, #07e2f1, #eb9b05);
   animation: animate2 3s linear infinite;
@@ -88,22 +92,23 @@
   border-radius: inherit;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1170px) {
-  .container-box {
-    width: 95%;
-  }
+.img-habilidades {
+  max-width: 90%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  border-radius: 30px;
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 600px) {
   .section-habilidades {
     padding: 20px 0;
   }
-  .habilidades {
-    width: 95%;
-    gap: 20px;
-  }
   .container-box {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+  }
+  .box-habilidades {
+    max-width: 100%;
+    justify-content: space-around;
   }
 }

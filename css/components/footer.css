@@ -1,100 +1,21 @@
 footer {
   width: 100%;
   height: auto;
-  padding: 10px 0 40px;
-  background-image: url(/assets/img/fundo-rodapé.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.todosItens {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.boxPulsar {
-  width: 250px;
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.imgPulsar {
-  width: 150px;
-  height: 150px;
-}
-
-.boxPulsar:before,
-.boxPulsar:after {
-  content: " ";
-  display: block;
-  position: absolute;
-  left: 20px;
-  right: 20px;
-  top: 30px;
-  bottom: 30px;
-  border-radius: 50%;
-  border: 2px solid goldenrod;
-  outline: 2px solid black;
-  box-shadow: 0 0 10px goldenrod, 0 0 20px goldenrod;
-  will-change: transform, opacity;
-  animation: arroba 1.5s linear infinite;
-  opacity: 0;
-}
-
-.boxPulsar:after {
-  animation-delay: 0.5s;
-}
-
-.logo-eo {
-  width: 80px;
-  height: 80px;
-  padding: 5px;
-  margin: 15px 0;
-  border: 2px solid goldenrod;
-  outline: 2px solid black;
-  border-radius: 50%;
-}
-.boxLink {
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.link {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 3px solid goldenrod;
-  outline: 2px solid black;
-  position: relative;
-  transition: 200ms ease-in-out;
-}
-.boxLink .link:hover {
-  box-shadow: 0 0 10px goldenrod, 0 0 15px goldenrod, 0 0 20px goldenrod,
-    0 0 25px goldenrod;
-}
-
-.arroba {
-  margin: 15px;
-  font-size: 25px;
-  color: black;
-  font-family: "Trebuchet MS";
-  transition: 200ms ease-in-out;
-}
-.arroba:hover {
-  transform: scale(1.05);
+  background-color: #c39316;
 }
 
 .thanks {
-  margin-top: 70px;
+  padding: 15px 0 30px;
   font-family: "Dancing Script", "Goblin one", sans-serif;
   text-align: center;
   color: yellow;
-  font-size: 50px;
+  font-size: 55px;
 }
-
+@media screen and (max-width: 600px) {
+  .thanks {
+    font-size: 25px;
+  }
+}
 .thanks-brilho span {
   animation: brilho 2s ease-in-out infinite;
 }
@@ -202,24 +123,5 @@ footer {
   90% {
     color: white;
     text-shadow: none;
-  }
-}
-
-@media screen and (max-width: 1250px) {
-  .boxLink {
-    width: auto;
-    gap: 40px;
-  }
-  .todosItens {
-    width: 95%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .boxPulsar:before,
-  .boxPulsar:after {
-    animation-duration: 2s;
-  }
-  .arroba {
-    font-size: 1.15rem;
   }
 }

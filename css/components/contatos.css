@@ -1,36 +1,37 @@
 .section-contatos {
   width: 100%;
   height: auto;
-  padding: 55px 0px;
+  padding: 30px 10px;
   overflow: hidden;
+  position: relative;
   display: flex;
+  gap: 40px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(/assets/img/fundo-rodapé.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 35%;
+  background-position: bottom;
+}
+
+.section-contatos .formulario {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 350px;
+  min-width: 310px;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid goldenrod;
+  outline: 2px solid black;
   background-image: url(/assets/img/contato-email.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
-}
-
-.select {
-  width: fit-content;
-  height: auto;
-  margin: 40px 10px;
-}
-
-.formulario {
-  max-width: 400px;
-  width: 100%;
-  min-width: 310px;
-  height: fit-content;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #0000008c;
-  border-radius: 15px;
-  border: 2px solid goldenrod;
-  outline: 1px solid black;
+  background-position: right;
 }
 
 .formulario .label {
@@ -51,26 +52,33 @@
   outline: 1px solid black;
 }
 
-.input:focus {
+.formulario .input:focus {
   opacity: 1;
 }
-.textarea {
+.formulario .textarea {
   height: 130px;
   resize: vertical;
   min-height: 100px;
   max-height: 300px;
 }
+.formulario .box-enviar {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
 .formulario .enviar {
   width: 60%;
-  margin: 15px calc(20%);
+  height: 35px;
   padding: 3px 0;
   opacity: 0.7;
   font-size: 20px;
-  font-weight: 400;
-  font-family: inherit;
+  font-weight: 600;
+  font-family: sans-serif, Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   cursor: pointer;
   color: goldenrod;
+  -webkit-text-stroke: 0.5px black;
   background-color: white;
   border: 2px solid goldenrod;
   outline: 1px solid black;
@@ -78,12 +86,56 @@
   transition: 200ms ease;
 }
 
-.formulario .enviar:hover {
+.box-enviar .enviar:hover {
   opacity: 1;
-  font-weight: 800;
 }
-.formulario .enviar:active {
+.box-enviar .enviar:active {
   transform: scale(0.9);
+}
+
+.section-contatos .select {
+  width: 90%;
+  height: auto;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.select .boxPulsar {
+  max-width: 200px;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxPulsar .imgPulsar {
+  width: 150px;
+  height: 150px;
+}
+
+.boxPulsar:before,
+.boxPulsar:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 30px;
+  bottom: 30px;
+  border-radius: 50%;
+  border: 2px solid goldenrod;
+  outline: 2px solid black;
+  box-shadow: 0 0 10px goldenrod, 0 0 20px goldenrod;
+  will-change: transform, opacity;
+  animation: arroba 1.5s linear infinite;
+  opacity: 0;
+}
+
+.boxPulsar:after {
+  animation-delay: 0.5s;
 }
 
 @keyframes arroba {
@@ -100,12 +152,74 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .select {
-    margin: 20px auto 0;
+.select .boxLink {
+  width: fit-content;
+  height: 250px;
+  padding: 10px 5px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.boxLink li {
+  list-style: none;
+}
+.boxLink li .img-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid goldenrod;
+  outline: 2px solid black;
+  position: relative;
+  transition: 200ms ease-in-out;
+}
+.boxLink li a {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 22px;
+  color: goldenrod;
+  -webkit-text-stroke: 0.5px black;
+  text-shadow: 1px 1px 2px black;
+}
+.boxLink li a:hover {
+  color: blue;
+}
+
+.section-contatos .logo-eo {
+  width: 170px;
+  height: 80px;
+  border: 2px solid goldenrod;
+  outline: 2px solid black;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 840px) {
+  .section-contatos {
+    background-size: contain;
   }
-  .formulario {
-    width: 95%;
-    padding: 10px;
+  .section-contatos .formulario {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+  }
+  .section-contatos .select {
+    padding: 10px 5px;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section-contatos {
+    background-size: contain;
+  }
+  .section-contatos .select {
+    width: 100%;
+  }
+  .boxLink li a {
+    flex-direction: column;
+    align-items: start;
   }
 }

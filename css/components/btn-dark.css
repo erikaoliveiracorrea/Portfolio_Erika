@@ -58,16 +58,22 @@ body.dark .section-sobre .titulo-animado .welcome {
 body.dark .section-sobre .boxPerfilTexto .boxTexto p {
   color: white;
 }
-body.dark .section-contatos {
+
+body.dark .section-contatos .formulario {
   background: transparent;
 }
 body.dark footer .boxLink .link:hover {
   box-shadow: 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 25px white;
 }
-body.dark footer .arroba {
-  color: white;
-}
 
+body.dark .botao-Topo {
+  background-color: transparent;
+  border: 4px solid #aca9a9;
+}
+body.dark .botao-Topo .arrow {
+  border: solid #aca9a9;
+  border-width: 0 7px 7px 0;
+}
 @media screen and (max-width: 500px) {
   .box-dark {
     position: absolute;
