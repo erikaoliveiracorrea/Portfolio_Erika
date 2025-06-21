@@ -4,19 +4,19 @@
   right: 35px;
   width: 35px;
   height: 35px;
-  background-color: black;
-  border: 2px solid goldenrod;
-  outline: 2px solid black;
   border-radius: 50%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  background-color: var(--btn-up-bg);
+  border: 2px solid var(--btn-up-border);
+  outline: 2px solid var(--btn-up-outline);
 }
 
 .arrow {
-  border: solid goldenrod;
+  border: solid var(--btn-up-arrow-border);
   border-width: 0 5px 5px 0;
   padding: 5px;
   display: inline-block;

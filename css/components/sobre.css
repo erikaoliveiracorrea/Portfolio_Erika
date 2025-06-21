@@ -1,20 +1,22 @@
 .section-sobre {
   width: 100%;
   height: calc(100dvh - 100px);
-  padding-bottom: 20px;
   background-image: url(/assets/img/fundo-cabeçalho.webp);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 15%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: end;
 }
-
+body.dark .section-sobre {
+  background-image: url(/assets/img/cabeçalho-preto.png);
+  background-size: 100% 20%;
+}
 .titulo-animado {
   max-width: 800px;
   width: 100%;
-  height: auto;
+  height: fit-content;
   margin-bottom: 10px;
   padding: 5px;
   display: flex;
@@ -24,12 +26,14 @@
 }
 
 .welcome {
+  padding: 5px 0;
   overflow: hidden;
   text-align: center;
   white-space: nowrap;
-  font-size: 50px;
-  color: white;
-  text-shadow: 0px -3px 15px yellow, 1px 6px 3px black;
+  font-size: 3em;
+  color: var(--welcome-cl);
+  text-shadow: 0px -3px 15px var(--welcome-text-shadow),
+    1px 6px 3px var(--welcome-text-shadow_2);
   font-family: "Dancing Script", Verdana, Geneva, Tahoma, sans-serif;
   animation: titulo-animado 3s ease infinite,
     cursor 500ms steps(30) infinite normal, tempo 3s steps(40) 1s normal both;
@@ -66,35 +70,25 @@
 }
 
 .boxPerfil {
-  max-width: 290px;
+  position: relative;
+  background: transparent;
+  border: 4px solid white;
+  outline: 4px solid goldenrod;
+  max-width: 230px;
   width: 100%;
-  height: 350px;
+  height: 250px;
   float: left;
-  margin: 0 10px 10px 0;
+  margin: 0 15px 15px 0;
 }
 
 .logoPerfil {
   width: 100%;
   height: 100%;
-  border-top-left-radius: 30%;
-  border-radius: 30% 3% 3% 3%;
-  border: 3px solid #daa520;
-  outline: 3px solid white;
-  animation: logoPerfil 2s ease-in-out;
+  position: absolute;
+  top: -15px;
+  left: -15px;
 }
 
-@keyframes logoPerfil {
-  0% {
-    height: 0;
-    width: 0;
-    opacity: 0;
-  }
-  100% {
-    height: 100%;
-    width: 100%;
-    opacity: 1;
-  }
-}
 .boxTexto {
   width: 100%;
   height: 100%;
@@ -104,7 +98,7 @@
   padding: 8px 10px;
   text-align: justify;
   text-indent: 1em;
-  color: black;
+  color: var(--main-text-cl);
   font-size: 22px;
   font-family: "Trebuchet MS", sans-serif;
 }
@@ -112,7 +106,12 @@
 @media screen and (max-width: 1200px) {
   .section-sobre {
     height: auto;
+    background-size: contain;
   }
+  body.dark .section-sobre {
+    background-size: contain;
+  }
+
   .boxTexto {
     width: 100%;
   }
@@ -124,10 +123,12 @@
     font-size: 30px;
   }
   .boxPerfilTexto {
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-size: contain;
   }
 
   .logoPerfil {

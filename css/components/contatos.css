@@ -2,6 +2,7 @@
   width: 100%;
   height: auto;
   padding: 30px 10px;
+  margin-top: 3px;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -15,31 +16,54 @@
   background-position: bottom;
 }
 
-.section-contatos .formulario {
+body.dark .section-contatos {
+  background-image: url(/assets/img/rodapé-preto.png);
+  background-size: 100% 20%;
+}
+.section-contatos .box-formulario {
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%);
   max-width: 350px;
-  min-width: 310px;
+  min-width: 280px;
   height: fit-content;
-  padding: 10px;
-  border-radius: 15px;
-  border: 2px solid goldenrod;
-  outline: 2px solid black;
-  background-image: url(/assets/img/contato-email.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: right;
+}
+.box-formulario .formulario {
+  position: relative;
+  padding: 20px 10px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 2px solid var(--form-border);
+  outline: 2px solid var(--form-outline);
+  background-color: var(--form-bg);
 }
 
 .formulario .label {
+  position: absolute;
+  color: var(--form-label-cl);
   font-family: "Fira Code", sans-serif;
-  font-size: 20px;
-  color: white;
+  padding: 0 5px;
+  font-size: 17px;
+  transition: transform 0.3s ease-in-out;
+  pointer-events: none;
+  background: transparent;
+}
+.formulario :nth-child(2) {
+  top: 25px;
+  left: 25px;
 }
 
+.formulario :nth-child(4) {
+  top: 75px;
+  left: 25px;
+}
+.formulario :nth-child(6) {
+  top: 125px;
+  left: 25px;
+}
 .formulario .input {
   width: 100%;
   padding: 3px 10px;
@@ -50,6 +74,25 @@
   font-size: 18px;
   opacity: 0.7;
   outline: 1px solid black;
+}
+.formulario input:nth-child(1) {
+  text-transform: capitalize;
+}
+
+/*------ "floating label" (rótulo flutuante)---*/
+.formulario input:focus + .label,
+.formulario input:not(:placeholder-shown) + .label {
+  transform: translateY(-20px);
+  font-size: 16px;
+  color: white;
+  border-radius: 5px 5px 0 0;
+}
+.formulario textarea:focus + .label,
+.formulario textarea:not(:placeholder-shown) + .label {
+  transform: translateY(-20px);
+  font-size: 16px;
+  color: white;
+  border-radius: 5px 5px 0 0;
 }
 
 .formulario .input:focus {
@@ -71,23 +114,23 @@
   width: 60%;
   height: 35px;
   padding: 3px 0;
-  opacity: 0.7;
   font-size: 20px;
-  font-weight: 600;
-  font-family: sans-serif, Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
   cursor: pointer;
-  color: goldenrod;
+  color: white;
   -webkit-text-stroke: 0.5px black;
-  background-color: white;
-  border: 2px solid goldenrod;
+  background-color: var(--form-submit-bg);
+  border: 2px solid #c39316;
   outline: 1px solid black;
   border-radius: 10px;
   transition: 200ms ease;
 }
 
 .box-enviar .enviar:hover {
-  opacity: 1;
+  background-color: white;
+  color: #c39316;
 }
 .box-enviar .enviar:active {
   transform: scale(0.9);
@@ -101,6 +144,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .select .boxPulsar {
   max-width: 200px;
   width: 100%;
@@ -114,6 +158,7 @@
 .boxPulsar .imgPulsar {
   width: 150px;
   height: 150px;
+  border-radius: 50%;
 }
 
 .boxPulsar:before,
@@ -126,9 +171,9 @@
   top: 30px;
   bottom: 30px;
   border-radius: 50%;
-  border: 2px solid goldenrod;
+  border: 2px solid #c39316;
   outline: 2px solid black;
-  box-shadow: 0 0 10px goldenrod, 0 0 20px goldenrod;
+  box-shadow: 0 0 10px #c39316, 0 0 20px #c39316;
   will-change: transform, opacity;
   animation: arroba 1.5s linear infinite;
   opacity: 0;
@@ -169,42 +214,51 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 3px solid goldenrod;
-  outline: 2px solid black;
+  border: 2px solid var(--img-link-border);
+  outline: 3px solid var(--img-link-outline);
   position: relative;
   transition: 200ms ease-in-out;
 }
 .boxLink li a {
   display: flex;
   gap: 10px;
+  letter-spacing: 1px;
   flex-wrap: nowrap;
   align-items: center;
+  font-weight: 700;
   font-size: 22px;
-  color: goldenrod;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   -webkit-text-stroke: 0.5px black;
-  text-shadow: 1px 1px 2px black;
+  color: var(--link-cl);
+  text-shadow: 2px 2px 2px black;
 }
 .boxLink li a:hover {
-  color: blue;
+  color: var(--link-cl-hover);
 }
 
 .section-contatos .logo-eo {
   width: 170px;
   height: 80px;
-  border: 2px solid goldenrod;
-  outline: 2px solid black;
+  border: 2px solid var(--logo-eo-border);
+  outline: 2px solid var(--logo-eo-outline);
   border-radius: 10px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1200px) {
   .section-contatos {
     background-size: contain;
   }
-  .section-contatos .formulario {
+  body.dark .section-contatos {
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section-contatos .box-formulario {
     position: relative;
     top: 0;
     left: 0;
     transform: translate(0);
+    margin: 0 5px;
   }
   .section-contatos .select {
     padding: 10px 5px;
@@ -212,11 +266,9 @@
   }
 }
 @media screen and (max-width: 500px) {
-  .section-contatos {
-    background-size: contain;
-  }
   .section-contatos .select {
     width: 100%;
+    flex-direction: column;
   }
   .boxLink li a {
     flex-direction: column;

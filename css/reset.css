@@ -8,36 +8,122 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: url(/assets/img/céu-branco.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 0 40px;
+  background-color: var(--body-bg);
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
 }
+/*------- RESET DE CORES----- */
+:root {
+  --body-bg: #c39316;
+  --eo-cl: #fff;
+  --eo-shadow: #ffff00;
+  --eo-shadow_2: #000000;
+  --eo-text-shadow: #000000;
+  --dark-bg: #fff;
+  --dark-border: #000000;
+  --dark-shadow: #ffff00;
+  --a-cl: #fff;
+  --a-text-shadow: #ffff00;
+  --a-text-shadow_2: #000000;
+  --title-section-cl: #fff;
+  --header-bg: #c39316;
+  --main-section-bg: #fddf65;
+  --main-text-cl: #000000;
+  --welcome-cl: #fff;
+  --welcome-text-shadow: #ffff00;
+  --welcome-text-shadow_2: #000000;
+  --barra-bg: #c39316;
+  --form-border: #fff;
+  --form-outline: #000000;
+  --form-bg: #c39316;
+  --form-label-cl: #c39316;
+  --form-submit-bg: #ffe681;
+  --img-link-border: #fff;
+  --img-link-outline: #000000;
+  --link-cl: #fff;
+  --link-cl-hover: #03bac7;
+  --logo-eo-border: #fff;
+  --logo-eo-outline: #000000;
+  --footer-bg: #c39316;
+  --btn-up-bg: #000000;
+  --btn-up-border: #fff;
+  --btn-up-outline: #000000;
+  --btn-up-arrow-border: #fff;
+  --scroll-track: #c39316;
+  --scroll-thumb: #fff;
+}
+
+.dark:root {
+  --body-bg: #000000;
+  --eo-cl: #fff;
+  --eo-shadow: #fff;
+  --eo-shadow_2: #000000;
+  --eo-text-shadow: #000000;
+  --dark-bg: #000000;
+  --dark-border: #fff;
+  --dark-shadow: #fff;
+  --a-cl: #fff;
+  --a-text-shadow: #fff;
+  --a-text-shadow_2: #000000;
+  --title-section-cl: #c39316;
+  --header-bg: #000000;
+  --main-section-bg: #0f0e0e;
+  --main-text-cl: #fff;
+  --welcome-cl: #c39316;
+  --welcome-text-shadow: #fff;
+  --welcome-text-shadow_2: #000000;
+  --barra-bg: #000000;
+  --form-border: #fff;
+  --form-outline: #c39316;
+  --form-bg: #000000;
+  --form-label-cl: #000000;
+  --form-submit-bg: #0f0e0e;
+  --img-link-border: #fff;
+  --img-link-outline: #c39316;
+  --link-cl: #c39316;
+  --link-cl-hover: #03bac7;
+  --logo-eo-border: #fff;
+  --logo-eo-outline: #c39316;
+  --footer-bg: #000000;
+  --btn-up-bg: transparent;
+  --btn-up-border: #fff;
+  --btn-up-outline: #c39316;
+  --btn-up-arrow-border: #c39316;
+  --scroll-track: #000000;
+  --scroll-thumb: #fff;
+}
+
 /*----RESET DO SCROLL-----*/
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #c9940f;
+  background: var(--scroll-track);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: white;
+  background-color: var(--scroll-thumb);
   border-radius: 10px;
 }
 /*-----RESET DOS TÍTULOS DAS SESSÕES----*/
+main,
+section {
+  background-color: var(--main-section-bg);
+}
 .title-section {
+  width: 100%;
   text-transform: uppercase;
   letter-spacing: 15px;
-  font-family: "Goblin One", sans-serif;
-  font-size: 30px;
+  font-family: "Fira Code", sans-serif;
+  font-size: 40px;
   text-align: center;
-  color: goldenrod;
-  -webkit-text-stroke: 1px black;
+  color: var(--title-section-cl);
+  -webkit-text-stroke: 0.03px #daa520;
+  text-shadow: 3px 3px 3px black;
 }
 /*---ANIMAÇÃO DOS TÍTULOS E LINKS DE CONTATOS----*/
 .animate {
   opacity: 0;
-  transition: 3s;
+  transition: 1.5s;
 }
 
 .animate.from-left {
@@ -53,8 +139,11 @@ body {
   opacity: 1;
 }
 @media screen and (max-width: 767px) {
+  body {
+    padding: 0 10px;
+  }
   .title-section {
-    font-size: 22px;
+    font-size: 30px;
     letter-spacing: 8px;
   }
 }

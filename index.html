@@ -91,7 +91,7 @@
         <div class="boxPerfil">
           <img
             class="logoPerfil"
-            src="/assets/img/foto perfil.webp"
+            src="/assets/img/foto_perfil-branco.png"
             alt="imagem de perfil"
           />
         </div>
@@ -280,41 +280,52 @@
 
     <section id="contatos" class="section-contatos">
       <h2 class="title-section animate from-right">contatos</h2>
-      <form
-        method="POST"
-        action="https://formsubmit.co/erikaestudosaraujo@gmail.com"
-        class="formulario"
-        id="formulario"
-        target="_blank"
-      >
-        <label for="name" class="label">Nome</label>
-        <input
-          id="name"
-          class="input"
-          type="text"
-          name="nome"
-          minlength="3"
-          maxlength="100"
-          required
-        />
+      <div class="box-formulario">
+        <form
+          method="POST"
+          action="https://formsubmit.co/erika.aoliveiracorrea@gmail.com"
+          class="formulario"
+          id="formulario"
+          target="_blank"
+        >
+          <input
+            id="name"
+            class="input"
+            type="text"
+            name="nome"
+            minlength="3"
+            maxlength="100"
+            required
+            placeholder=""
+          />
+          <label for="name" class="label">Nome</label>
 
-        <label for="email" class="label">Email</label>
-        <input id="email" class="input" type="email" name="email" required />
+          <input
+            id="email"
+            class="input"
+            type="email"
+            name="email"
+            required
+            placeholder=""
+          />
+          <label for="email" class="label">Email</label>
 
-        <label for="mensagem" class="label">Mensagem</label>
-        <textarea
-          id="mensagem"
-          class="input textarea"
-          cols="60"
-          rows="10"
-          type="mensagem"
-          name="message"
-          required
-        ></textarea>
-        <div class="box-enviar">
-          <button class="enviar" type="submit">enviar</button>
-        </div>
-      </form>
+          <textarea
+            id="mensagem"
+            class="input textarea"
+            cols="60"
+            rows="10"
+            type="mensagem"
+            name="message"
+            placeholder=""
+            required
+          ></textarea>
+          <label for="mensagem" class="label">Mensagem</label>
+          <div class="box-enviar">
+            <button class="enviar" type="submit">enviar</button>
+          </div>
+        </form>
+      </div>
       <div class="select">
         <div class="boxPulsar">
           <img
@@ -328,7 +339,7 @@
           <li class="animate from-left">
             <a
               target="_blank"
-              href="mailto:erikaaraujodeoliveiracorrea@gmail.com?subject=Olá, vim pelo Portfólio!"
+              href="mailto:erika.aoliveiracorrea@gmail.com?subject=Olá, vim pelo Portfólio!"
             >
               <img
                 loading="lazy"
