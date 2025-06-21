@@ -1,7 +1,6 @@
 .box-dark {
-  width: 70px;
+  width: 50px;
   height: 35px;
-  padding: 2px;
   display: flex;
   align-items: center;
   border-radius: 20px;
@@ -26,24 +25,17 @@
   left: 2px;
   transition: 0.3s;
 }
-.box-dark.dark {
+
+#box-dark_light.dark {
   background-color: var(--dark-bg);
   border: 1px solid var(--dark-border);
   box-shadow: 10px 0 10px var(--dark-shadow), 20px 3px 20px var(--dark-shadow);
 }
-.box-dark.dark .btn-dark {
-  left: 39px;
+#box-dark_light.dark .btn-dark {
+  left: 20px;
   background-image: url(/assets/img/lua.jpeg);
 }
 
-@media screen and (max-width: 960px) {
-  .box-dark {
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translate(-50%);
-  }
-}
 @media screen and (max-width: 500px) {
   header .erikaOliveira {
     box-shadow: -10px -0 15px var(--eo-shadow_2),
@@ -51,3 +43,10 @@
     text-shadow: -5px -3px 5px var(--eo-text-shadow);
   }
 }
+/* @media screen and (max-width: 320px) {
+  .box-dark {
+   bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+} */

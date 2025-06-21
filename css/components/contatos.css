@@ -16,7 +16,7 @@
   background-position: bottom;
 }
 
-body.dark .section-contatos {
+html.dark .section-contatos {
   background-image: url(/assets/img/rodapé-preto.png);
   background-size: 100% 20%;
 }
@@ -36,8 +36,8 @@ body.dark .section-contatos {
   gap: 20px;
   flex-direction: column;
   border-radius: 8px;
-  border: 2px solid var(--form-border);
-  outline: 2px solid var(--form-outline);
+  border: 2px solid var(--border);
+  outline: 2px solid var(--outline);
   background-color: var(--form-bg);
 }
 
@@ -119,18 +119,17 @@ body.dark .section-contatos {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
   cursor: pointer;
-  color: white;
+  color: #c39316;
   -webkit-text-stroke: 0.5px black;
   background-color: var(--form-submit-bg);
-  border: 2px solid #c39316;
-  outline: 1px solid black;
+  border: 2px solid var(--border);
+  outline: 1px solid var(--outline);
   border-radius: 10px;
   transition: 200ms ease;
 }
 
 .box-enviar .enviar:hover {
-  background-color: white;
-  color: #c39316;
+  background-color: #fddf65;
 }
 .box-enviar .enviar:active {
   transform: scale(0.9);
@@ -214,8 +213,8 @@ body.dark .section-contatos {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid var(--img-link-border);
-  outline: 3px solid var(--img-link-outline);
+  border: 2px solid var(--border);
+  outline: 3px solid var(--outline);
   position: relative;
   transition: 200ms ease-in-out;
 }
@@ -239,8 +238,8 @@ body.dark .section-contatos {
 .section-contatos .logo-eo {
   width: 170px;
   height: 80px;
-  border: 2px solid var(--logo-eo-border);
-  outline: 2px solid var(--logo-eo-outline);
+  border: 2px solid var(--border);
+  outline: 2px solid var(--outline);
   border-radius: 10px;
 }
 

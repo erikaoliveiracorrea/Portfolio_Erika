@@ -1,22 +1,27 @@
 const btnMenu = document.getElementById("btn-menu");
 const menuMobile = document.getElementById("menu-mobile");
-const bodyHidden = document.querySelector("body");
-const btnListMobile = document.querySelectorAll("#menu-mobile a"); // Aqui você pode usar o ID ou a classe, ambos funcionam.
+const taghtml = document.querySelector("html"); // <html>
+const body = document.body;
 
 btnMenu.addEventListener("click", () => {
   btnMenu.classList.toggle("ativo");
   menuMobile.classList.toggle("abrir");
+
   if (menuMobile.classList.contains("abrir")) {
-    bodyHidden.style.overflow = "hidden";
+    taghtml.style.overflow = "hidden"; // ← ESSENCIAL EM MOBILE
+    body.style.overflow = "hidden";
   } else {
-    bodyHidden.style.overflow = "";
+    taghtml.style.overflow = "";
+    body.style.overflow = "";
   }
 });
 
+const btnListMobile = document.querySelectorAll("#menu-mobile a");
 btnListMobile.forEach((link) => {
   link.addEventListener("click", () => {
-    btnMenu.classList.toggle("ativo"); // remove para garantir que o menu sempre feche
-    menuMobile.classList.toggle("abrir");
-    bodyHidden.style.overflow = "";
+    menuMobile.classList.remove("abrir");
+    btnMenu.classList.remove("ativo");
+    taghtml.style.overflow = "";
+    body.style.overflow = "";
   });
 });

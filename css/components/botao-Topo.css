@@ -11,8 +11,8 @@
   justify-content: center;
   cursor: pointer;
   background-color: var(--btn-up-bg);
-  border: 2px solid var(--btn-up-border);
-  outline: 2px solid var(--btn-up-outline);
+  border: 2px solid var(--border);
+  outline: 2px solid var(--outline);
 }
 
 .arrow {

@@ -12,6 +12,10 @@ body {
   background-color: var(--body-bg);
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
 }
+main,
+section {
+  background-color: var(--main-section-bg);
+}
 /*------- RESET DE CORES----- */
 :root {
   --body-bg: #c39316;
@@ -33,27 +37,23 @@ body {
   --welcome-text-shadow: #ffff00;
   --welcome-text-shadow_2: #000000;
   --barra-bg: #c39316;
-  --form-border: #fff;
-  --form-outline: #000000;
   --form-bg: #c39316;
   --form-label-cl: #c39316;
-  --form-submit-bg: #ffe681;
-  --img-link-border: #fff;
-  --img-link-outline: #000000;
+  --form-submit-bg: #fff;
   --link-cl: #fff;
   --link-cl-hover: #03bac7;
-  --logo-eo-border: #fff;
-  --logo-eo-outline: #000000;
   --footer-bg: #c39316;
   --btn-up-bg: #000000;
-  --btn-up-border: #fff;
-  --btn-up-outline: #000000;
   --btn-up-arrow-border: #fff;
   --scroll-track: #c39316;
   --scroll-thumb: #fff;
+  --border: #fff;
+  --outline: #000000;
 }
 
 .dark:root {
+  --border: #fff;
+  --outline: #c39316;
   --body-bg: #000000;
   --eo-cl: #fff;
   --eo-shadow: #fff;
@@ -73,21 +73,13 @@ body {
   --welcome-text-shadow: #fff;
   --welcome-text-shadow_2: #000000;
   --barra-bg: #000000;
-  --form-border: #fff;
-  --form-outline: #c39316;
   --form-bg: #000000;
   --form-label-cl: #000000;
   --form-submit-bg: #0f0e0e;
-  --img-link-border: #fff;
-  --img-link-outline: #c39316;
   --link-cl: #c39316;
   --link-cl-hover: #03bac7;
-  --logo-eo-border: #fff;
-  --logo-eo-outline: #c39316;
   --footer-bg: #000000;
   --btn-up-bg: transparent;
-  --btn-up-border: #fff;
-  --btn-up-outline: #c39316;
   --btn-up-arrow-border: #c39316;
   --scroll-track: #000000;
   --scroll-thumb: #fff;
@@ -105,10 +97,7 @@ body {
   border-radius: 10px;
 }
 /*-----RESET DOS TÍTULOS DAS SESSÕES----*/
-main,
-section {
-  background-color: var(--main-section-bg);
-}
+
 .title-section {
   width: 100%;
   text-transform: uppercase;
