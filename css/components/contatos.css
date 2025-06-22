@@ -247,7 +247,7 @@ html.dark .section-contatos {
   .section-contatos {
     background-size: contain;
   }
-  body.dark .section-contatos {
+  html.dark .section-contatos {
     background-size: contain;
   }
 }

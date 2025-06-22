@@ -108,7 +108,7 @@ html.dark .section-sobre {
     height: auto;
     background-size: contain;
   }
-  body.dark .section-sobre {
+  html.dark .section-sobre {
     background-size: contain;
   }
 
