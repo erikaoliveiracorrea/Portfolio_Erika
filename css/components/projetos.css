@@ -72,14 +72,12 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
   cursor: pointer;
-  color: #c39316;
-  border-radius: 0 0 3% 3%;
+  color: black;
+  border-radius: 0 0 5px 5px;
   -webkit-text-stroke: 0.5px black;
-  background-color: var(--form-submit-bg);
+  background-color: #c39316;
   border: 2px solid var(--border);
   outline: 2px solid var(--outline);
-  border: none;
-  outline: none;
 }
 .btn-description:hover {
   background-color: #fddf65;
