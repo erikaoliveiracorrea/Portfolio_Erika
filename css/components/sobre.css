@@ -1,6 +1,7 @@
 .section-sobre {
   width: 100%;
   height: calc(100dvh - 100px);
+  padding: 0 10px;
   background-image: url(/assets/img/fundo-cabeçalho.webp);
   background-repeat: no-repeat;
   background-size: 100% 15%;
@@ -125,7 +126,8 @@ html.dark .section-sobre {
     font-size: 30px;
   }
   .boxPerfilTexto {
-    padding: 10px;
+    width: 100%;
+    /* padding: 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,6 +141,9 @@ html.dark .section-sobre {
   .boxTexto {
     border: none;
     padding: 0;
+  }
+  .boxTexto p {
+    padding: 5px;
   }
 }
 @media screen and (max-width: 320px) {
