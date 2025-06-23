@@ -70,15 +70,16 @@ html.dark .section-sobre {
 }
 
 .boxPerfil {
-  position: relative;
-  background: transparent;
-  border: 4px solid var(--border);
-  outline: 4px solid goldenrod;
   max-width: 230px;
   width: 100%;
   height: 250px;
   float: left;
   margin: 0 15px 15px 0;
+  position: relative;
+  background: transparent;
+  border: 4px solid var(--border);
+  outline: 4px solid #c39316;
+  border-radius: 3%;
 }
 
 .logoPerfil {
@@ -87,6 +88,7 @@ html.dark .section-sobre {
   position: absolute;
   top: -15px;
   left: -15px;
+  border-radius: 3%;
 }
 
 .boxTexto {
@@ -99,8 +101,8 @@ html.dark .section-sobre {
   text-align: justify;
   text-indent: 1em;
   color: var(--main-text-cl);
-  font-size: 22px;
-  font-family: "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-family: "Merienda", "Trebuchet MS", sans-serif;
 }
 
 @media screen and (max-width: 1200px) {

@@ -13,12 +13,19 @@ body {
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
 }
 main,
-section {
+section,
+footer {
   background-color: var(--main-section-bg);
 }
 /*------- RESET DE CORES----- */
 :root {
   --body-bg: #c39316;
+  --btn-bg: #fff;
+  --btn-cl: #000000;
+  --btn-bg-hover: #fddf65;
+  --btn-cl-hover: #000000;
+  --border: #fff;
+  --outline: #000000;
   --eo-cl: #fff;
   --eo-shadow: #ffff00;
   --eo-shadow_2: #000000;
@@ -39,22 +46,22 @@ section {
   --barra-bg: #c39316;
   --form-bg: #c39316;
   --form-label-cl: #c39316;
-  --form-submit-bg: #fff;
   --link-cl: #fff;
   --link-cl-hover: #03bac7;
-  --footer-bg: #c39316;
   --btn-up-bg: #000000;
   --btn-up-arrow-border: #fff;
   --scroll-track: #c39316;
   --scroll-thumb: #fff;
-  --border: #fff;
-  --outline: #000000;
 }
 
 .dark:root {
+  --body-bg: #000000;
+  --btn-bg: #c39316;
+  --btn-cl: #000000;
+  --btn-bg-hover: #fddf65;
+  --btn-cl-hover: #000000;
   --border: #fff;
   --outline: #c39316;
-  --body-bg: #000000;
   --eo-cl: #fff;
   --eo-shadow: #fff;
   --eo-shadow_2: #000000;
@@ -75,14 +82,21 @@ section {
   --barra-bg: #000000;
   --form-bg: #000000;
   --form-label-cl: #000000;
-  --form-submit-bg: #0f0e0e;
   --link-cl: #c39316;
   --link-cl-hover: #03bac7;
-  --footer-bg: #000000;
   --btn-up-bg: transparent;
   --btn-up-arrow-border: #c39316;
   --scroll-track: #000000;
   --scroll-thumb: #fff;
+}
+
+/* --RESET DE HOVER--- */
+@media (hover: hover) and (pointer: fine) {
+  .show-hover:hover {
+    color: var(--btn-cl-hover);
+    background-color: var(--btn-bg-hover);
+    transition: transform 200ms ease-in-out;
+  }
 }
 
 /*----RESET DO SCROLL-----*/
@@ -102,13 +116,15 @@ section {
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 15px;
-  font-family: "Fira Code", sans-serif;
-  font-size: 40px;
+  font-family: "Yuji Hentaigana Akari", "Merienda", "Dancing Script",
+    "Fira Code", sans-serif;
+  font-size: 3em;
+  font-weight: 900;
   text-align: center;
   color: var(--title-section-cl);
-  -webkit-text-stroke: 0.03px #daa520;
-  text-shadow: 3px 3px 3px black;
+  text-shadow: 5px 5px 3px black;
 }
+
 /*---ANIMAÇÃO DOS TÍTULOS E LINKS DE CONTATOS----*/
 .animate {
   opacity: 0;
@@ -136,3 +152,14 @@ section {
     letter-spacing: 8px;
   }
 }
+
+/* <button class="button hover-efeito">Clique aqui</button>
+<div class="card hover-efeito">Conteúdo</div> */
+
+/* @media (hover: hover) and (pointer: fine) {
+  .hover-efeito:hover {
+    transform: scale(1.05);
+    transition: transform 200ms ease-in-out;
+    background-color: #f0f0f0;
+  }
+} */

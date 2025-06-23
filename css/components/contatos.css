@@ -110,7 +110,7 @@ html.dark .section-contatos {
   display: flex;
   justify-content: center;
 }
-.formulario .enviar {
+.enviar {
   width: 60%;
   height: 35px;
   padding: 3px 0;
@@ -119,18 +119,15 @@ html.dark .section-contatos {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
   cursor: pointer;
-  color: #c39316;
   -webkit-text-stroke: 0.5px black;
-  background-color: var(--form-submit-bg);
+  color: var(--btn-cl);
+  background-color: var(--btn-bg);
   border: 2px solid var(--border);
   outline: 1px solid var(--outline);
   border-radius: 10px;
   transition: 200ms ease;
 }
 
-.box-enviar .enviar:hover {
-  background-color: #fddf65;
-}
 .box-enviar .enviar:active {
   transform: scale(0.9);
 }
@@ -231,8 +228,11 @@ html.dark .section-contatos {
   color: var(--link-cl);
   text-shadow: 2px 2px 2px black;
 }
-.boxLink li a:hover {
-  color: var(--link-cl-hover);
+@media (hover: hover) and (pointer: fine) {
+  .boxLink li a:hover {
+    color: var(--link-cl-hover);
+    transition: transform 200ms ease-in-out;
+  }
 }
 
 .section-contatos .logo-eo {
