@@ -117,7 +117,7 @@ footer {
   text-transform: uppercase;
   letter-spacing: 15px;
   font-family: "Yuji Hentaigana Akari", "Merienda", "Dancing Script",
-    "Fira Code", sans-serif;
+    "Fira Code", sans-serif, Verdana, Geneva, Tahoma;
   font-size: 3em;
   font-weight: 900;
   text-align: center;
@@ -148,8 +148,8 @@ footer {
     padding: 0 10px;
   }
   .title-section {
-    font-size: 30px;
-    letter-spacing: 8px;
+    font-size: 28px;
+    letter-spacing: 4px;
   }
 }
 
