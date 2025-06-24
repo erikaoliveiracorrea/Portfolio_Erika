@@ -92,9 +92,9 @@ html.dark .section-sobre {
 }
 
 .boxTexto p {
+  padding: 10px 10px 20px;
   text-align: justify;
   text-indent: 1em;
-  padding: 0 10px;
   color: var(--main-text-cl);
   font-size: 22px;
   font-family: "Merienda", "Trebuchet MS", sans-serif, Verdana, Geneva, Tahoma;
