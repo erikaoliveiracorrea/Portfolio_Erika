@@ -29,6 +29,12 @@ html.dark .section-contatos {
   min-width: 280px;
   height: fit-content;
 }
+.cardreview {
+  height: 230px;
+  width: calc(50% - 20px);
+  min-width: 400px;
+  margin: 10px;
+}
 .box-formulario .formulario {
   position: relative;
   padding: 20px 10px;
