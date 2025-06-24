@@ -15,37 +15,36 @@ html.dark .section-sobre {
   background-size: 100% 20%;
 }
 .titulo-animado {
-  max-width: 800px;
-  width: 100%;
-  height: fit-content;
+  width: fit-content;
+  height: auto;
   margin-bottom: 10px;
-  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-}
-
-.welcome {
-  padding: 5px 0;
-  overflow: hidden;
-  text-align: center;
-  white-space: nowrap;
-  font-size: 3em;
-  color: var(--welcome-cl);
-  text-shadow: 0px -3px 15px var(--welcome-text-shadow),
-    1px 6px 3px var(--welcome-text-shadow_2);
-  font-family: "Dancing Script", Verdana, Geneva, Tahoma, sans-serif;
-  animation: titulo-animado 3s ease infinite,
-    cursor 500ms steps(30) infinite normal, tempo 3s steps(40) 1s normal both;
+  animation: titulo-animado 3s ease infinite;
 }
 @keyframes titulo-animado {
   0% {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(10px);
+    transform: translateX(-10px);
   }
+}
+
+.welcome {
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  padding: 10px 0;
+  font-size: 3em;
+  color: var(--welcome-cl);
+  text-shadow: 0px -3px 15px var(--welcome-text-shadow),
+    1px 6px 3px var(--welcome-text-shadow_2);
+  font-family: "Dancing Script", Verdana, Geneva, Tahoma, sans-serif;
+  animation: cursor 500ms steps(30) infinite normal,
+    tempo 3s steps(40) 1s normal both;
 }
 
 @keyframes cursor {
@@ -118,7 +117,6 @@ html.dark .section-sobre {
 
 @media screen and (max-width: 600px) {
   .welcome {
-    margin-top: 20px;
     font-size: 30px;
   }
   .boxPerfilTexto {
@@ -143,6 +141,6 @@ html.dark .section-sobre {
 }
 @media screen and (max-width: 320px) {
   .welcome {
-    font-size: 27px;
+    font-size: 25px;
   }
 }
