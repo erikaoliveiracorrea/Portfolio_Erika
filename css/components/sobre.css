@@ -21,8 +21,6 @@ html.dark .section-sobre {
   justify-content: center;
   align-items: center;
   animation: titulo-animado 3s ease infinite;
-  border: 1px solid black;
-  overflow: hidden;
 }
 
 @keyframes titulo-animado {
