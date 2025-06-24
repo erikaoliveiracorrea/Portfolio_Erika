@@ -1,7 +1,6 @@
 .section-sobre {
   width: 100%;
   height: calc(100dvh - 100px);
-  padding: 0 10px;
   background-image: url(/assets/img/fundo-cabeçalho.webp);
   background-repeat: no-repeat;
   background-size: 100% 15%;
@@ -21,7 +20,6 @@ html.dark .section-sobre {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   animation: titulo-animado 3s ease infinite;
 }
 @keyframes titulo-animado {
