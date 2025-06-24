@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: 100% 15%;
   display: flex;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
@@ -14,9 +15,8 @@ html.dark .section-sobre {
   background-size: 100% 20%;
 }
 .titulo-animado {
-  width: fit-content;
+  width: 100%;
   height: auto;
-  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,12 +92,12 @@ html.dark .section-sobre {
 }
 
 .boxTexto p {
-  padding: 8px 10px;
   text-align: justify;
   text-indent: 1em;
+  padding: 0 5px;
   color: var(--main-text-cl);
   font-size: 20px;
-  font-family: "Merienda", "Trebuchet MS", sans-serif;
+  font-family: "Merienda", "Trebuchet MS", sans-serif, Verdana, Geneva, Tahoma;
 }
 
 @media screen and (max-width: 1200px) {
@@ -132,10 +132,6 @@ html.dark .section-sobre {
   }
   .boxTexto {
     border: none;
-    padding: 0;
-  }
-  .boxTexto p {
-    padding: 5px;
   }
 }
 @media screen and (max-width: 320px) {
